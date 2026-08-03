@@ -1,0 +1,71 @@
+.sectionContainer {
+  position: relative;
+  padding: 6rem 0;
+  background: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.rippleRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  border: 1px solid rgba(217, 255, 0, 0.15);
+  pointer-events: none;
+}
+
+:global(html[data-theme="light"]) .rippleRing {
+  border: 1px solid rgba(124, 168, 0, 0.2);
+}
+
+.ring1 {
+  width: 480px;
+  height: 480px;
+}
+
+.ring2 {
+  width: 700px;
+  height: 700px;
+}
+
+.ring3 {
+  width: 920px;
+  height: 920px;
+}
+
+.floatingCard {
+  background: rgba(24, 24, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.floatingCard:hover {
+  border-color: rgba(217, 255, 0, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(217, 255, 0, 0.15);
+}
+
+:global(html[data-theme="light"]) .floatingCard {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.iconBox {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background: rgba(217, 255, 0, 0.15);
+  border: 1px solid rgba(217, 255, 0, 0.3);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}

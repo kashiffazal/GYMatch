@@ -1,0 +1,71 @@
+.ctaSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #121216;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.4);
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+}
+
+
+:global(html[data-theme="light"]) .ctaSection {
+  background: #f4f5f7;
+  border-t: 1px solid rgba(0, 0, 0, 0.12);
+  color: #0a0a0b;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.pillTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  background: rgba(217, 255, 0, 0.12);
+  border: 1px solid rgba(217, 255, 0, 0.3);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+}
+
+:global(html[data-theme="light"]) .pillTag {
+  background: rgba(141, 184, 0, 0.15);
+  border: 1px solid rgba(141, 184, 0, 0.3);
+  color: #628200;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+:global(html[data-theme="light"]) .downloadButton {
+  background: #0a0a0b;
+  color: #ffffff;
+}
+
+.downloadButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(217, 255, 0, 0.3);
+}
+
+
+
+

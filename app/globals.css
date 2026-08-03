@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-primary: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f3f5;
+  --color-accent: #7ca800;
+  --color-accent-hover: #699100;
+  --color-foreground: #0a0a0b;
+  --color-text-muted: #55555e;
+  --color-border: rgba(0, 0, 0, 0.12);
+  --color-glow: rgba(124, 168, 0, 0.15);
+}
+
+html.dark, html[data-theme="dark"] {
+  --color-bg-primary: #0a0a0b;
+  --color-surface: #18181c;
+  --color-surface-hover: #222228;
+  --color-accent: #d9ff00;
+  --color-accent-hover: #c2e600;
+  --color-foreground: #ffffff;
+  --color-text-muted: #9e9ea8;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-glow: rgba(217, 255, 0, 0.18);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-bebas: var(--font-bebas);
+  --font-inter: var(--font-inter);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-hover);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Hardware-Accelerated Smooth Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes floatSmoothUp {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes floatSmoothDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 5s infinite ease-in-out;
+  will-change: opacity, transform;
+}
+
+.animate-float-up {
+  animation: floatSmoothUp 4.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-down {
+  animation: floatSmoothDown 5.2s ease-in-out infinite;
+  will-change: transform;
 }

@@ -1,0 +1,20 @@
+.footerWatermark {
+  font-size: 16vw;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  background: linear-gradient(180deg, rgba(217, 255, 0, 0.3) 0%, rgba(255, 255, 255, 0.08) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  font-family: var(--font-bebas);
+  font-weight: 900;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+:global(html[data-theme="light"]) .footerWatermark {
+  background: linear-gradient(180deg, rgba(124, 168, 0, 0.4) 0%, rgba(10, 10, 11, 0.15) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

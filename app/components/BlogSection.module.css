@@ -1,0 +1,39 @@
+.blogCard {
+  background: rgba(24, 24, 28, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(217, 255, 0, 0.6);
+  box-shadow: 0 20px 45px rgba(217, 255, 0, 0.15);
+}
+
+:global(html[data-theme="light"]) .blogCard {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  transition: transform 0.7s ease;
+}
+
+.blogCard:hover .imageWrapper img {
+  transform: scale(1.08);
+}
