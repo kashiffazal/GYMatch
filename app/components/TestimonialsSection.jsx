@@ -12,7 +12,7 @@ const TESTIMONIALS = [
     image: "/assets/testimonials/1.png",
     rating: 5,
     quote:
-      "I'm glad there is an app out there that can help big guys like me find a spotter in the gym. No more weight lifting alone—now I can find spotters all day long. Great stuff GYMatch!",
+      "I'm glad there is an app out there that can help big guys like me find a spotter in the gym. No more weight lifting alone-now I can find spotters all day long. Great stuff GYMatch!",
     role: "Bodybuilder & Powerlifter",
   },
   {
@@ -59,9 +59,11 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="py-20 sm:py-28 bg-[var(--color-surface)]/50 border-y border-[var(--color-border)] relative">
+    <section
+      id="testimonials"
+      className="py-20 sm:py-28 bg-[var(--color-surface)]/50 border-y border-[var(--color-border)] relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
@@ -71,11 +73,14 @@ export default function TestimonialsSection() {
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
             BUILT FOR COMMITMENT. <br />
-            <span className="text-[var(--color-accent)]">PROVEN BY MEMBERS.</span>
+            <span className="text-[var(--color-accent)]">
+              PROVEN BY MEMBERS.
+            </span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Read how GYMatch has transformed the workout experience for lifters, trainers, and fitness enthusiasts across the country.
+            Read how GYMatch has transformed the workout experience for lifters,
+            trainers, and fitness enthusiasts across the country.
           </p>
         </div>
 
@@ -148,7 +153,8 @@ export default function TestimonialsSection() {
                 JOIN OVER 50,000+ FITNESS LOVERS
               </h3>
               <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
-                Connect with spotters, find new gyms, and elevate your fitness journey with GYMatch SaaS mobile application.
+                Connect with spotters, find new gyms, and elevate your fitness
+                journey with GYMatch SaaS mobile application.
               </p>
             </div>
 
@@ -164,7 +170,6 @@ export default function TestimonialsSection() {
             </div>
           </motion.div>
         </div>
-
       </div>
     </section>
   );

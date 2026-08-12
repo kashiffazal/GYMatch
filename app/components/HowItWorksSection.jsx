@@ -3,7 +3,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhoneMockup from "@/components/PhoneMockup";
-import { Navigation, Users, Send, MessageSquare, ArrowRight } from "lucide-react";
+import {
+  Navigation,
+  Users,
+  Send,
+  MessageSquare,
+  ArrowRight,
+} from "lucide-react";
 
 const STEPS = [
   {
@@ -49,9 +55,14 @@ export default function HowItWorksSection() {
   const currentStep = STEPS.find((s) => s.id === activeStep) || STEPS[0];
 
   return (
-    <section id="how-it-works" className="py-20 sm:py-28 bg-[var(--color-surface)]/50 border-y border-[var(--color-border)] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <section
+      id="how-it-works"
+      className="py-20 sm:py-28 bg-[var(--color-surface)]/70 bg-gradient-to-b from-[var(--color-surface)]/80 to-[var(--color-surface)]/40 border-b border-[var(--color-border)] relative overflow-hidden"
+    >
+      {/* Drifting Left-to-Right Ambient Accent Glow */}
+      <div className="absolute top-1/2 left-0 w-[550px] h-[550px] bg-[var(--color-accent)]/10 rounded-full blur-[150px] pointer-events-none animate-drift-slow"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
@@ -60,17 +71,18 @@ export default function HowItWorksSection() {
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            HOW TO USE <span className="text-[var(--color-accent)]">GYMATCH</span>
+            HOW TO USE{" "}
+            <span className="text-[var(--color-accent)]">GYMATCH</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Getting started takes under 30 seconds. Follow these 4 easy steps to find your next gym and workout partner.
+            Getting started takes under 30 seconds. Follow these 4 easy steps to
+            find your next gym and workout partner.
           </p>
         </div>
 
         {/* Interactive Step Switcher & Phone Display */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
           {/* Left Column: Interactive Steps List */}
           <div className="lg:col-span-7 space-y-4">
             {STEPS.map((step) => {
@@ -83,8 +95,8 @@ export default function HowItWorksSection() {
                   onClick={() => setActiveStep(step.id)}
                   className={`p-6 sm:p-8 rounded-3xl cursor-pointer transition-all duration-300 border ${
                     isActive
-                      ? "bg-[var(--color-surface)] border-[var(--color-accent)] shadow-xl shadow-[var(--color-accent)]/10 scale-[1.01]"
-                      : "bg-[var(--color-bg-primary)]/70 border-[var(--color-border)] hover:border-[var(--color-accent)]/50"
+                      ? "bg-[var(--color-surface)] border-[var(--color-accent)] shadow-2xl shadow-[var(--color-accent)]/10 scale-[1.01]"
+                      : "bg-[var(--color-surface)]/60 border-[var(--color-border)] hover:border-[var(--color-accent)]/60 hover:bg-[var(--color-surface)]"
                   }`}
                 >
                   <div className="flex items-start gap-5">
@@ -102,12 +114,16 @@ export default function HowItWorksSection() {
                       <div className="flex items-center justify-between">
                         <h3
                           className={`font-bebas text-2xl tracking-wide ${
-                            isActive ? "text-[var(--color-foreground)]" : "text-[var(--color-text-muted)]"
+                            isActive
+                              ? "text-[var(--color-foreground)]"
+                              : "text-[var(--color-text-muted)]"
                           }`}
                         >
                           {step.title}
                         </h3>
-                        {isActive && <ArrowRight className="w-5 h-5 text-[var(--color-accent)]" />}
+                        {isActive && (
+                          <ArrowRight className="w-5 h-5 text-[var(--color-accent)]" />
+                        )}
                       </div>
 
                       <div className="text-xs font-semibold text-[var(--color-accent)] uppercase tracking-wider">
@@ -140,7 +156,7 @@ export default function HowItWorksSection() {
                   alt={`Step ${currentStep.id}: ${currentStep.title}`}
                   className="shadow-2xl"
                   badge={
-                    <div className="px-6 py-2.5 rounded-full bg-[var(--color-accent)] text-black font-bebas text-lg tracking-wider shadow-xl">
+                    <div className="px-6 py-2.5 rounded-full bg-[var(--color-accent)] text-[var(--color-accent-text)] font-bebas text-lg tracking-wider shadow-xl">
                       STEP {currentStep.id} OF 4
                     </div>
                   }
@@ -148,9 +164,7 @@ export default function HowItWorksSection() {
               </motion.div>
             </AnimatePresence>
           </div>
-
         </div>
-
       </div>
     </section>
   );

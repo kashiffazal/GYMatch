@@ -2,17 +2,26 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Compass, Users, MapPin, CheckCircle2, XCircle, ArrowRight, Zap } from "lucide-react";
+import {
+  Compass,
+  Users,
+  MapPin,
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
+  Zap,
+} from "lucide-react";
 
 export default function WhatIsItSection() {
   return (
-    <section id="what-is-gymatch" className="py-20 sm:py-28 bg-[var(--color-surface)]/40 border-y border-[var(--color-border)] relative overflow-hidden">
-      
+    <section
+      id="what-is-gymatch"
+      className="py-20 sm:py-28 bg-[var(--color-surface)]/40 border-y border-[var(--color-border)] relative overflow-hidden"
+    >
       {/* Subtle Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-[var(--color-accent)]/5 rounded-full blur-[160px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
@@ -25,13 +34,21 @@ export default function WhatIsItSection() {
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            GYMatch bridges the gap between <span className="text-[var(--color-foreground)] font-semibold">“I need a gym”</span> and <span className="text-[var(--color-accent)] font-semibold">“I’m training with a partner.”</span> It automatically detects your live GPS coordinates to reveal nearby fitness centers and active workout spotters around you.
+            GYMatch bridges the gap between{" "}
+            <span className="text-[var(--color-foreground)] font-semibold">
+              “I need a gym”
+            </span>{" "}
+            and{" "}
+            <span className="text-[var(--color-accent)] font-semibold">
+              “I’m training with a partner.”
+            </span>{" "}
+            It automatically detects your live GPS coordinates to reveal nearby
+            fitness centers and active workout spotters around you.
           </p>
         </div>
 
         {/* 4 Unified Feature & Comparison Boxes (2x2 Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
           {/* Card 1: Real-Time Geolocation Gym Discovery Engine */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -66,7 +83,9 @@ export default function WhatIsItSection() {
               </h3>
 
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                No manual location input needed. Senses your exact GPS location anywhere in the world and instantly displays top gyms, CrossFit boxes, combat academies, and yoga studios around you.
+                No manual location input needed. Senses your exact GPS location
+                anywhere in the world and instantly displays top gyms, CrossFit
+                boxes, combat academies, and yoga studios around you.
               </p>
 
               <ul className="space-y-3 text-xs font-semibold text-[var(--color-foreground)] pt-2">
@@ -86,7 +105,9 @@ export default function WhatIsItSection() {
             </div>
 
             <div className="p-6 bg-[var(--color-bg-primary)]/80 backdrop-blur-md border-t border-[var(--color-border)] relative z-10 flex items-center justify-between">
-              <span className="text-xs font-bold text-[var(--color-foreground)]">Exploration Radius: Up to 10 Miles</span>
+              <span className="text-xs font-bold text-[var(--color-foreground)]">
+                Exploration Radius: Up to 10 Miles
+              </span>
               <ArrowRight className="w-4 h-4 text-[var(--color-accent)] group-hover:translate-x-1 transition-transform" />
             </div>
           </motion.div>
@@ -125,7 +146,9 @@ export default function WhatIsItSection() {
               </h3>
 
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                Enable "Find Workout Partner" mode at any gym to see who is currently training at that location, compare workout goals or experience levels, and send instant training invitations.
+                Enable "Find Workout Partner" mode at any gym to see who is
+                currently training at that location, compare workout goals or
+                experience levels, and send instant training invitations.
               </p>
 
               <ul className="space-y-3 text-xs font-semibold text-[var(--color-foreground)] pt-2">
@@ -135,17 +158,23 @@ export default function WhatIsItSection() {
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0" />
-                  <span>Match by training style (Strength, MMA, Yoga, Cardio)</span>
+                  <span>
+                    Match by training style (Strength, MMA, Yoga, Cardio)
+                  </span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0" />
-                  <span>Temporary lightweight chat with auto-expiring threads</span>
+                  <span>
+                    Temporary lightweight chat with auto-expiring threads
+                  </span>
                 </li>
               </ul>
             </div>
 
             <div className="p-6 bg-[var(--color-bg-primary)]/80 backdrop-blur-md border-t border-[var(--color-border)] relative z-10 flex items-center justify-between">
-              <span className="text-xs font-bold text-[var(--color-foreground)] font-mono">Spotters Online: 30,000+ Verified Users</span>
+              <span className="text-xs font-bold text-[var(--color-foreground)] font-mono">
+                Spotters Online: 30,000+ Verified Users
+              </span>
               <ArrowRight className="w-4 h-4 text-[var(--color-accent)] group-hover:translate-x-1 transition-transform" />
             </div>
           </motion.div>
@@ -173,31 +202,44 @@ export default function WhatIsItSection() {
               </h3>
 
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                The friction of solo fitness training before GYMatch: manual search, lack of spotters, and safety/privacy concerns.
+                The friction of solo fitness training before GYMatch: manual
+                search, lack of spotters, and safety/privacy concerns.
               </p>
 
               <ul className="space-y-3.5 text-xs sm:text-sm text-[var(--color-text-muted)] pt-2">
                 <li className="flex items-start gap-2.5">
                   <XCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
-                  <span>Searching Google Maps manually & calling gyms for equipment details</span>
+                  <span>
+                    Searching Google Maps manually & calling gyms for equipment
+                    details
+                  </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <XCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
-                  <span>Lifting heavy weights alone with nobody available to spot heavy sets</span>
+                  <span>
+                    Lifting heavy weights alone with nobody available to spot
+                    heavy sets
+                  </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <XCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
-                  <span>Awkwardly asking strangers for workout partnerships</span>
+                  <span>
+                    Awkwardly asking strangers for workout partnerships
+                  </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <XCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
-                  <span>Sharing personal phone numbers & social media profiles</span>
+                  <span>
+                    Sharing personal phone numbers & social media profiles
+                  </span>
                 </li>
               </ul>
             </div>
 
             <div className="p-6 bg-red-500/5 backdrop-blur-md border-t border-red-500/20 relative z-10 flex items-center justify-between">
-              <span className="text-xs font-bold text-red-400">Solo Training Friction & Anxiety</span>
+              <span className="text-xs font-bold text-red-400">
+                Solo Training Friction & Anxiety
+              </span>
               <XCircle className="w-4 h-4 text-red-400" />
             </div>
           </motion.div>
@@ -225,39 +267,50 @@ export default function WhatIsItSection() {
               </h3>
 
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                Streamlined, privacy-first mobile application connecting gym goers and combat athletes globally.
+                Streamlined, privacy-first mobile application connecting gym
+                goers and combat athletes globally.
               </p>
 
               <ul className="space-y-3.5 text-xs sm:text-sm text-[var(--color-foreground)] font-medium pt-2">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0 mt-0.5" />
-                  <span>Instant live GPS discovery of verified gyms with full amenity breakdown</span>
+                  <span>
+                    Instant live GPS discovery of verified gyms with full
+                    amenity breakdown
+                  </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0 mt-0.5" />
-                  <span>Real-time feed showing active spotters currently at your gym</span>
+                  <span>
+                    Real-time feed showing active spotters currently at your gym
+                  </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0 mt-0.5" />
-                  <span>Filter training partners by exact discipline, weight class, or goal</span>
+                  <span>
+                    Filter training partners by exact discipline, weight class,
+                    or goal
+                  </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0 mt-0.5" />
-                  <span>Privacy-first temporary chat thread without revealing private contact info</span>
+                  <span>
+                    Privacy-first temporary chat thread without revealing
+                    private contact info
+                  </span>
                 </li>
               </ul>
             </div>
 
             <div className="p-6 bg-[var(--color-accent)]/10 backdrop-blur-md border-t border-[var(--color-accent)]/30 relative z-10 flex items-center justify-between">
-              <span className="text-xs font-bold text-[var(--color-accent)]">Seamless Real-time SaaS Platform</span>
+              <span className="text-xs font-bold text-[var(--color-accent)]">
+                Seamless Real-time SaaS Platform
+              </span>
               <CheckCircle2 className="w-4 h-4 text-[var(--color-accent)]" />
             </div>
           </motion.div>
-
         </div>
-
       </div>
     </section>
   );
 }
-

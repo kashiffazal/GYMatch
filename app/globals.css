@@ -1,27 +1,42 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, [data-theme="dark"], .dark *, [data-theme="dark"] *));
+
 :root {
   --color-bg-primary: #f8f9fa;
   --color-surface: #ffffff;
   --color-surface-hover: #f1f3f5;
   --color-accent: #7ca800;
   --color-accent-hover: #699100;
+  --color-accent-text: #ffffff;
   --color-foreground: #0a0a0b;
   --color-text-muted: #55555e;
   --color-border: rgba(0, 0, 0, 0.12);
   --color-glow: rgba(124, 168, 0, 0.15);
+
+  /* Centralized Section & Soft Ambient Glow Variables */
+  --color-section-bg: rgba(255, 255, 255, 0.6);
+  --color-ambient-glow: rgba(124, 168, 0, 0.10);
+  --color-ambient-glow-secondary: rgba(16, 185, 129, 0.10);
 }
 
-html.dark, html[data-theme="dark"] {
+html.dark,
+html[data-theme="dark"] {
   --color-bg-primary: #0a0a0b;
   --color-surface: #18181c;
   --color-surface-hover: #222228;
   --color-accent: #d9ff00;
   --color-accent-hover: #c2e600;
+  --color-accent-text: #0a0a0b;
   --color-foreground: #ffffff;
   --color-text-muted: #9e9ea8;
   --color-border: rgba(255, 255, 255, 0.12);
   --color-glow: rgba(217, 255, 0, 0.18);
+
+  /* Centralized Section & Soft Ambient Glow Variables */
+  --color-section-bg: rgba(24, 24, 28, 0.4);
+  --color-ambient-glow: rgba(217, 255, 0, 0.12);
+  --color-ambient-glow-secondary: rgba(16, 185, 129, 0.12);
 }
 
 @theme inline {
@@ -32,8 +47,14 @@ html.dark, html[data-theme="dark"] {
 body {
   background-color: var(--color-bg-primary);
   color: var(--color-foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family:
+    var(--font-inter),
+    system-ui,
+    -apple-system,
+    sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   overflow-x: hidden;
 }
 
@@ -54,18 +75,57 @@ body {
 
 /* Hardware-Accelerated Smooth Animations */
 @keyframes pulseGlow {
-  0%, 100% {
-    opacity: 0.35;
+  0%,
+  100% {
+    opacity: 0.15;
     transform: scale(1);
   }
   50% {
-    opacity: 0.75;
-    transform: scale(1.04);
+    opacity: 0.45;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulseSlow {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes driftHorizontal {
+  0%,
+  100% {
+    transform: translateY(-50%) translateX(0px);
+  }
+  50% {
+    transform: translateY(-50%) translateX(160px);
+  }
+}
+
+@keyframes haloPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.4;
   }
 }
 
 @keyframes floatSmoothUp {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -74,7 +134,8 @@ body {
 }
 
 @keyframes floatSmoothDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -83,8 +144,23 @@ body {
 }
 
 .animate-pulse-glow {
-  animation: pulseGlow 5s infinite ease-in-out;
+  animation: pulseGlow 2.2s infinite ease-in-out;
   will-change: opacity, transform;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 2.4s infinite ease-in-out;
+  will-change: opacity, transform;
+}
+
+.animate-drift-slow {
+  animation: driftHorizontal 2.6s infinite ease-in-out;
+  will-change: transform;
+}
+
+.animate-ping-slow {
+  animation: haloPulse 2.0s infinite ease-in-out;
+  will-change: transform, opacity;
 }
 
 .animate-float-up {
@@ -95,4 +171,119 @@ body {
 .animate-float-down {
   animation: floatSmoothDown 5.2s ease-in-out infinite;
   will-change: transform;
+}
+
+/* ── Official Print & Save to PDF Stylesheet ────────────────────────────── */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+
+  /* Force background to pure white and text to crisp dark black */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #111111 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  body,
+  html,
+  main,
+  section,
+  article,
+  div {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  /* Hide web navigation, hero overlays, footers, sidebars, buttons & glows */
+  header,
+  footer,
+  aside,
+  nav,
+  button,
+  .no-print,
+  [aria-label="Print Policy"],
+  [aria-label="Print Terms"],
+  [aria-hidden="true"],
+  .animate-pulse-slow,
+  .animate-pulse-glow {
+    display: none !important;
+  }
+
+  /* Force Framer Motion inline opacity & transform to 100% visible so all sections (1-8) print */
+  [style*="opacity"],
+  [style*="transform"],
+  section,
+  article,
+  main,
+  div,
+  p,
+  h1, h2, h3, h4, h5, h6,
+  span {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  /* Reset main layout wrapper for print */
+  main {
+    padding-top: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  /* Convert grid to single column 100% width block */
+  .grid {
+    display: block !important;
+  }
+
+  .lg\:col-span-8,
+  .lg\:col-span-12,
+  .col-span-full {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Clause Cards Formatting & Page Break Safety */
+  section,
+  article,
+  .scroll-mt-28 {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 1.25rem !important;
+    padding: 1.25rem !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    background-color: #ffffff !important;
+  }
+
+  /* Typography Headings */
+  h1, h2, h3, h4 {
+    color: #000000 !important;
+    font-weight: 800 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  p, li, span {
+    color: #374151 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.6 !important;
+  }
+
+  a {
+    color: #111827 !important;
+    text-decoration: underline !important;
+  }
 }

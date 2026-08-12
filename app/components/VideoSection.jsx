@@ -25,9 +25,11 @@ export default function VideoSection() {
   }, [isOpen]);
 
   return (
-    <section className="py-20 sm:py-28 relative bg-[var(--color-surface)]/30 border-y border-[var(--color-border)] overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <section className="py-20 sm:py-28 relative bg-[var(--color-surface)]/80 border-b border-[var(--color-border)] overflow-hidden">
+      {/* Static Center Radial Ambient Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[var(--color-accent)]/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
@@ -36,41 +38,52 @@ export default function VideoSection() {
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            SEE GYMATCH IN <span className="text-[var(--color-accent)]">ACTION</span>
+            SEE GYMATCH IN{" "}
+            <span className="text-[var(--color-accent)]">ACTION</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Watch our official promo video demonstrating real-time gym discovery and instant workout partner matching.
+            Watch our official promo video demonstrating real-time gym discovery
+            and instant workout partner matching.
           </p>
         </div>
 
         {/* Video Preview Card (Launches Popup Modal) */}
         <div className={styles.videoContainer}>
-          <div 
-            className="relative h-[340px] sm:h-[480px] md:h-[540px] w-full rounded-3xl overflow-hidden group cursor-pointer border border-[var(--color-border)] shadow-2xl"
+          <div
+            className="relative h-[340px] sm:h-[480px] md:h-[540px] w-full rounded-3xl overflow-hidden group cursor-pointer border border-[var(--color-border)] shadow-2xl bg-[#0d0d12]"
             onClick={() => setIsOpen(true)}
           >
-            {/* High-res Photo Cover */}
-            <Image
-              src="/assets/img/box-training.jpg"
-              alt="GYMatch Official Video Preview"
-              fill
-              className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-60"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+            {/* Expanding Halo Ring Background Animation */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] sm:w-[480px] sm:h-[480px] rounded-full border border-[var(--color-accent)]/30 animate-ping-slow pointer-events-none z-10"></div>
 
-            {/* Play Button Overlay */}
+            {/* GPS Interactive Map App Screen Background */}
+            <Image
+              src="/assets/app/others/Explore.png"
+              alt="GYMatch Real-Time GPS Map Discovery Preview"
+              fill
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-70"
+            />
+
+            {/* Dark Gradient Overlay for High Contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
+
+            {/* Play Button & Callout Overlay */}
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-20">
               <div className={styles.playButton}>
                 <Play className="w-8 h-8 fill-current ml-1" />
               </div>
-              <span className="text-xs font-extrabold uppercase tracking-widest text-white bg-black/60 px-5 py-2.5 rounded-full border border-white/20 backdrop-blur-md shadow-xl group-hover:border-[var(--color-accent)] group-hover:text-[var(--color-accent)] transition-all">
-                Watch Promo Video (Popup)
-              </span>
+              <div className="flex flex-col items-center gap-1 text-center px-4">
+                <span className="text-xs font-extrabold uppercase tracking-widest text-white bg-black/80 px-6 py-2.5 rounded-full border border-white/20 backdrop-blur-md shadow-2xl group-hover:border-[var(--color-accent)] group-hover:text-[var(--color-accent)] transition-all">
+                  Watch Live GPS Demo (Popup)
+                </span>
+                <span className="text-[11px] text-[var(--color-text-muted)] font-medium">
+                  See live gym discovery & spotter feeds populating in real-time
+                </span>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Video Popup Modal */}
@@ -114,4 +127,3 @@ export default function VideoSection() {
     </section>
   );
 }
-

@@ -10,9 +10,9 @@ export default function PhoneMockup({
   priority = false,
 }) {
   return (
-    <div className={`relative flex flex-col items-center justify-center select-none w-[280px] sm:w-[320px] md:w-[340px] shrink-0 mx-auto ${className}`}>
+    <div className="relative flex flex-col items-center justify-center select-none w-[280px] sm:w-[320px] md:w-[340px] shrink-0 mx-auto">
       {/* Outer Phone Chassis */}
-      <div className="relative w-full h-[570px] sm:h-[650px] border-[10px] sm:border-[12px] border-[#1a1a1e] dark:border-[#282830] bg-[#0a0a0c] rounded-[48px] sm:rounded-[54px] shadow-2xl shadow-black/80 ring-1 ring-white/10 overflow-hidden flex flex-col transition-transform duration-500 hover:scale-[1.02]">
+      <div className={`relative w-full h-[570px] sm:h-[650px] border-[10px] sm:border-[12px] border-[#1a1a1e] dark:border-[#282830] bg-[#0a0a0c] rounded-[48px] sm:rounded-[54px] shadow-2xl shadow-black/80 ring-1 ring-white/10 overflow-hidden flex flex-col transition-transform duration-500 hover:scale-[1.02] ${className}`}>
         
         {/* Dynamic Island / Notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[22px] w-[110px] bg-black rounded-b-[18px] z-30 flex items-center justify-center gap-2">
