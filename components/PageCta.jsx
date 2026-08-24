@@ -12,8 +12,21 @@ import {
   Smartphone,
 } from "lucide-react";
 
+const ICON_MAP = {
+  globe: Globe,
+  users: Users,
+  shield: ShieldCheck,
+  mobile: Smartphone,
+  smartphone: Smartphone,
+  sparkles: Sparkles,
+};
+
 function renderIcon(IconProp, defaultClassName = "w-4 h-4") {
   if (!IconProp) return null;
+  if (typeof IconProp === "string") {
+    const IconFromMap = ICON_MAP[IconProp.toLowerCase()] || Sparkles;
+    return <IconFromMap className={defaultClassName} />;
+  }
   if (React.isValidElement(IconProp)) {
     return IconProp;
   }
@@ -22,21 +35,21 @@ function renderIcon(IconProp, defaultClassName = "w-4 h-4") {
 }
 
 const DEFAULT_METRICS = [
-  { icon: Globe, text: "50K+ Fitness Hubs" },
+  { icon: Globe, text: "50,000+ Fitness Hubs" },
   { icon: Users, text: "30,000+ Active Spotters" },
-  { icon: ShieldCheck, text: "Free iOS & Android" },
+  { icon: Smartphone, text: "Engineered for Mobile" },
 ];
 
 export default function PageCta({
-  badgeText = "Join The Movement",
+  badgeText = "JOIN THE MOVEMENT",
   badgeIcon = Sparkles,
   title = (
     <>
-      JOIN THE GLOBAL <br />
-      <span className="text-[var(--color-accent)]">FITNESS MOVEMENT</span>
+      THE GLOBAL{" "}
+      <span className="text-[var(--color-accent)]">TRAINING STANDARD</span>
     </>
   ),
-  description = "Connect with 30,000+ spotters and explore 50K+ fitness hubs across the globe. Download GYMatch today and start discovering gyms and training partners worldwide.",
+  description = "Connect with 30,000+ spotters and explore 50,000+ fitness hubs across the globe. Download Gymatch today to synchronize your training environment worldwide.",
   bgImage = "/assets/img/bodybuilder-training-back-on-exercise-machine.jpg",
   metricPills = DEFAULT_METRICS,
   showStoreButtons = true,

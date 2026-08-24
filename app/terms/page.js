@@ -4,8 +4,9 @@ import TermsContentSection from "./components/TermsContentSection";
 import { FileText } from "lucide-react";
 
 export const metadata = {
-  title: "Terms & Conditions | GYMatch SaaS App",
-  description: "Official legal terms and conditions governing the use of GYMatch app, website sub-domains, and fitness spotter services.",
+  title: "Terms of Service | Gymatch Legal Protocols",
+  description:
+    "This document constitutes a legally binding agreement governing your access to and use of the Gymatch ecosystem, including our website, mobile applications, and partner synchronization services.",
 };
 
 export default function TermsPage() {
@@ -17,11 +18,13 @@ export default function TermsPage() {
         badgeIcon={<FileText className="w-4 h-4" />}
         title={
           <>
-            TERMS & <br />
-            <span className="text-[var(--color-accent)]">CONDITIONS</span>
+            LEGAL AGREEMENT &{" "}
+            <span className="text-[var(--color-accent)]">
+              GOVERNING PROTOCOLS
+            </span>
           </>
         }
-        description="This document constitutes a legally binding agreement governing your access to and use of GYMatch website, mobile applications, and fitness spotter services."
+        description="This document constitutes a legally binding agreement governing your access to and use of the Gymatch ecosystem, including our website, mobile applications, and partner synchronization services."
         bgImage="/assets/img/strong-male-athlete-running-on-modern-treadmill.jpg"
         showStoreButtons={false}
       />

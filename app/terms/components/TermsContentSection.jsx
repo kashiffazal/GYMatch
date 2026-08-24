@@ -14,14 +14,14 @@ import {
 } from "lucide-react";
 
 export const TERMS_SECTIONS = [
-  { id: "legal-agreement", title: "1. Legal Agreement", icon: FileText },
+  { id: "legal-agreement", title: "1. Legal Agreement & Amendments", icon: FileText },
   { id: "definitions", title: "2. Definitions", icon: Scale },
-  { id: "registration", title: "3. Account Registration", icon: RefreshCw },
+  { id: "registration", title: "3. Account Integrity & Registration", icon: RefreshCw },
   { id: "warranty-disclaimer", title: "4. Warranty & Liability", icon: ShieldAlert },
-  { id: "spotlight-refunds", title: "5. Spotlight Refunds", icon: CreditCard },
-  { id: "payments-invoices", title: "6. Payments & Invoices", icon: CreditCard },
-  { id: "fraud-monitoring", title: "7. Fraud Monitoring", icon: AlertTriangle },
-  { id: "general-terms", title: "8. General Compliance", icon: Lock },
+  { id: "spotlight-refunds", title: "5. Spotlight Purchase Policy", icon: CreditCard },
+  { id: "payments-invoices", title: "6. Payments & Billing", icon: CreditCard },
+  { id: "fraud-monitoring", title: "7. Fraud Monitoring & Safety", icon: AlertTriangle },
+  { id: "governing-law", title: "8. Governing Law", icon: Lock },
 ];
 
 export default function TermsContentSection() {
@@ -42,7 +42,7 @@ export default function TermsContentSection() {
               <span className="px-3 py-1 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)] border border-[var(--color-accent)]/20 text-[10px] font-bold uppercase tracking-widest">
                 Active Document
               </span>
-              <span className="text-xs text-[var(--color-text-muted)] font-medium">Original Posting: June 14, 2013</span>
+              <span className="text-xs text-[var(--color-text-muted)] font-medium">Last Updated: May 2024</span>
             </div>
             <p className="text-xs sm:text-sm text-[var(--color-foreground)] font-semibold">
               Governing All Website Sub-Domains & Mobile Applications
@@ -87,7 +87,7 @@ export default function TermsContentSection() {
               </nav>
             </motion.div>
 
-            {/* Legal Support Box */}
+            {/* Legal Support Desk */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -103,10 +103,10 @@ export default function TermsContentSection() {
                 Questions regarding invoice processing, spotlight purchases, or member account policies?
               </p>
               <a
-                href="mailto:legal@gymatch.com"
+                href="mailto:contact@gymatch.com"
                 className="inline-block text-xs font-bold text-[var(--color-accent)] hover:underline"
               >
-                legal@gymatch.com →
+                contact@gymatch.com →
               </a>
             </motion.div>
           </aside>
@@ -130,10 +130,7 @@ export default function TermsContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">1. LEGAL AGREEMENT & AMENDMENTS</h2>
               </div>
               <p>
-                This web page represents a legal document that serves as our Terms and Conditions and governs the legal terms of our website, http://www.GYMatch.com, sub-domains, and associated web-based and mobile applications (collectively, &ldquo;Website&rdquo;), owned and operated by GYMatch.
-              </p>
-              <p>
-                These Terms and Conditions, along with our Privacy Policy, mobile license agreements, and posted guidelines (&ldquo;Legal Terms&rdquo;), constitute the entire agreement between you and GYMatch. By using our Website, you agree to fully comply with and be bound by our Legal Terms. If you do not accept these terms, you must immediately discontinue use of our Website and mobile app.
+                These Terms of Service, in conjunction with our Privacy Policy and posted operational guidelines (&ldquo;Legal Terms&rdquo;), constitute the entire agreement between you and Gymatch. By accessing or utilizing our platform, you agree to comply with and be bound by these Legal Terms. If you do not accept these terms, you must immediately discontinue use of the Gymatch ecosystem. We reserve the right to update these terms to reflect the evolution of our platform.
               </p>
             </motion.section>
 
@@ -152,9 +149,23 @@ export default function TermsContentSection() {
                 </div>
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">2. DEFINITIONS</h2>
               </div>
-              <p>
-                The terms &ldquo;us&rdquo; or &ldquo;we&rdquo; or &ldquo;our&rdquo; refers to GYMatch. A &ldquo;Visitor&rdquo; is someone who browses our Website without registering. A &ldquo;Member&rdquo; is an individual who has completed registration with us to use our Service. Our &ldquo;Service&rdquo; represents the functionality and spotter discovery tools offered through our Website and apps to Members. All graphics, text, audio, video, and data offered are collectively known as &ldquo;Content&rdquo;.
-              </p>
+              <ul className="space-y-2.5 pl-2">
+                <li>
+                  <strong className="text-[var(--color-foreground)]">&ldquo;We,&rdquo; &ldquo;Us,&rdquo; &ldquo;Our&rdquo;:</strong>{" "}Refers to Gymatch.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">&ldquo;Visitor&rdquo;:</strong>{" "}Any individual browsing our platform without registration.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">&ldquo;Member&rdquo;:</strong>{" "}Any individual who has successfully completed registration to access our synchronization and discovery tools.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">&ldquo;Service&rdquo;:</strong>{" "}The collective functionality, partner discovery, and facility mapping tools provided via our mobile applications and web interfaces.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">&ldquo;Content&rdquo;:</strong>{" "}All data, text, graphics, audio, and visual assets provided through our platform.
+                </li>
+              </ul>
             </motion.section>
 
             {/* Section 3 */}
@@ -170,10 +181,10 @@ export default function TermsContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <RefreshCw className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">3. ACCOUNT REGISTRATION INFORMATION</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">3. ACCOUNT INTEGRITY & REGISTRATION</h2>
               </div>
               <p>
-                To complete the sign-up process, you must provide your full legal name, current address, a valid email address, member name, and confirm that you are 18 years of age or older. You are responsible for keeping your password secure and for all activities under your account. Transmitting worms, viruses, or destructive code is strictly prohibited and will result in instant account termination.
+                To access the Gymatch ecosystem, you must provide accurate registration data, including your legal name, a verified email address, and confirmation that you are 18 years of age or older. You are solely responsible for maintaining the security of your credentials and for all activity occurring under your account. The transmission of malicious code, viruses, or any disruptive software is strictly prohibited and will result in immediate account termination.
               </p>
             </motion.section>
 
@@ -193,7 +204,7 @@ export default function TermsContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">4. WARRANTY DISCLAIMER & LIMITATION OF LIABILITY</h2>
               </div>
               <p>
-                We will not be liable for indirect, special, or consequential damages, or any loss of revenue, profits, or data arising in connection with this Agreement. This site and its services are provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis. GYMatch makes no express or implied warranties or representations regarding fitness, merchantability, or uninterrupted service operation.
+                The Gymatch platform is provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis. We do not provide express or implied warranties regarding uninterrupted operation, merchantability, or fitness for a specific purpose. Gymatch shall not be liable for any indirect, incidental, or consequential damages, including loss of revenue, data, or profits, arising from your use of the platform.
               </p>
             </motion.section>
 
@@ -210,10 +221,10 @@ export default function TermsContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <CreditCard className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">5. SPOTLIGHT REFUNDS</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">5. SPOTLIGHT PURCHASE POLICY (NO REFUNDS)</h2>
               </div>
               <div className="p-4 rounded-2xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 text-[var(--color-foreground)] font-semibold text-xs">
-                IMPORTANT: By ordering or using the GYMatch Spotlight feature, you understand and agree that we offer NO REFUNDS under any circumstances. All purchases for Spotlight placement are final.
+                By purchasing or utilizing the Gymatch &ldquo;Spotlight&rdquo; performance feature, you acknowledge and agree that all transactions are final. We maintain a no-refund policy for Spotlight placements under any circumstances.
               </div>
             </motion.section>
 
@@ -230,10 +241,10 @@ export default function TermsContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <CreditCard className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">6. PAYMENTS AND INVOICES</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">6. PAYMENTS & BILLING</h2>
               </div>
               <p>
-                GYMatch reserves sole discretion to specify payment terms. Unless credit terms are agreed upon, payment must be received via Credit Card, PayPal, or Wire Transfer prior to order acceptance. Invoices are due within 15 days of the invoice date. Undisputed overdue balances incur a late charge penalty of 1% per month.
+                Gymatch reserves the right to specify payment terms for premium features. For business-to-business transactions or specific Spotlight service agreements, payments must be settled via authorized methods (Credit Card, PayPal, or Wire Transfer). Overdue balances on invoiced services are subject to a late-charge penalty of 1% per month.
               </p>
             </motion.section>
 
@@ -250,16 +261,16 @@ export default function TermsContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <AlertTriangle className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">7. FRAUD MONITORING</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">7. FRAUD MONITORING & SAFETY</h2>
               </div>
               <p>
-                Fraudulent activities are actively monitored. If fraud or fake profile impersonation is detected, GYMatch shall resort to all remedies available by law, and the offending user shall be responsible for all costs and legal fees arising from such activities.
+                Gymatch actively monitors for fraudulent activity, including the creation of fake profiles or impersonation. Any breach of these protocols will result in the immediate removal of the offending account. We reserve the right to pursue all available legal remedies against parties engaging in fraudulent behavior, and offending users shall be responsible for all costs and legal fees incurred by Gymatch.
               </p>
             </motion.section>
 
             {/* Section 8 */}
             <motion.section
-              id="general-terms"
+              id="governing-law"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -270,10 +281,10 @@ export default function TermsContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <Lock className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">8. GENERAL COMPLIANCE & GOVERNING LAW</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">8. GOVERNING LAW</h2>
               </div>
               <p>
-                Our Legal Terms shall be treated as performed in California, United States, and governed by California law without regard to conflict of law principles. Any legal action by you must be instituted within one (1) year after the cause of action arose or be forever barred.
+                These Legal Terms shall be performed in and governed by the laws of the State of California, United States, without regard to conflict of law principles. Any legal action initiated by a user must be filed within one (1) year of the date the cause of action arose; failure to do so will result in the claim being permanently barred.
               </p>
             </motion.section>
 

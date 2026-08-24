@@ -15,13 +15,13 @@ import {
 
 export const PRIVACY_SECTIONS = [
   { id: "overview", title: "1. Overview & Scope", icon: ShieldCheck },
-  { id: "information-collection", title: "2. Information We Collect", icon: Database },
-  { id: "use-of-information", title: "3. How We Use Data", icon: Eye },
-  { id: "data-sharing", title: "4. Third-Party Sharing", icon: Share2 },
-  { id: "cookies-tracking", title: "5. Cookies & Tracking", icon: Cookie },
-  { id: "user-rights", title: "6. Your Privacy Rights", icon: UserCheck },
-  { id: "data-protection", title: "7. Security & Retention", icon: Lock },
-  { id: "updates-contact", title: "8. Policy Updates", icon: Bell },
+  { id: "data-collection", title: "2. Data Collection", icon: Database },
+  { id: "operational-usage", title: "3. Operational Data Usage", icon: Eye },
+  { id: "third-party-sharing", title: "4. Third-Party Data Integrity", icon: Share2 },
+  { id: "tracking-authentication", title: "5. Tracking & Session Authentication", icon: Cookie },
+  { id: "user-rights", title: "6. User Privacy Rights", icon: UserCheck },
+  { id: "security-retention", title: "7. Security & Retention", icon: Lock },
+  { id: "policy-evolution", title: "8. Policy Evolution & Contact", icon: Bell },
 ];
 
 export default function PrivacyContentSection() {
@@ -40,12 +40,12 @@ export default function PrivacyContentSection() {
           <div className="space-y-3">
             <div className="flex items-center gap-3">
               <span className="px-3 py-1 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)] border border-[var(--color-accent)]/20 text-[10px] font-bold uppercase tracking-widest">
-                Official Policy v2.0
+                Active Document
               </span>
-              <span className="text-xs text-[var(--color-text-muted)] font-medium">Last Updated: June 14, 2026</span>
+              <span className="text-xs text-[var(--color-text-muted)] font-medium">Last Updated: May 2024</span>
             </div>
             <p className="text-xs sm:text-sm text-[var(--color-foreground)] font-semibold">
-              Governing GYMatch Mobile App & Web Platform Services Worldwide
+              Governing Gymatch Mobile App & Web Platform Services Worldwide
             </p>
           </div>
           
@@ -130,16 +130,13 @@ export default function PrivacyContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">1. OVERVIEW & SCOPE</h2>
               </div>
               <p>
-                At GYMatch, we take your privacy seriously. This Privacy Policy details how GYMatch Inc. (&ldquo;GYMatch&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) collects, processes, stores, and safeguards personal information when you utilize our website (http://www.GYMatch.com), sub-domains, and associated mobile applications available on iOS and Android.
-              </p>
-              <p>
-                By creating a GYMatch account or using our real-time gym discovery and workout partner matching features, you agree to the collection and use of information in accordance with this policy.
+                At Gymatch, your privacy is treated with the same rigor as our platform security. This policy details how Gymatch Inc. (&ldquo;Gymatch,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, processes, stores, and safeguards personal information across our web interfaces and mobile applications. By creating an account or utilizing our real-time discovery and synchronization tools, you consent to the data practices described herein.
               </p>
             </motion.section>
 
             {/* Section 2 */}
             <motion.section
-              id="information-collection"
+              id="data-collection"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -150,22 +147,30 @@ export default function PrivacyContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <Database className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">2. INFORMATION WE COLLECT</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">2. DATA COLLECTION</h2>
               </div>
               <p>
-                We collect information to provide better services, enable real-time spotter connections, and verify registered fitness profiles. Information collected includes:
+                We collect specific data points to optimize your training experience and ensure the integrity of our network. These include:
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-xs">
-                <li><strong className="text-[var(--color-foreground)]">Account Registration Data:</strong> Full legal name, email address, chosen username, encrypted password, and age verification (18+).</li>
-                <li><strong className="text-[var(--color-foreground)]">Fitness Profile Information:</strong> Workout goals, preferred gym facilities, fitness discipline, avatar photo, and bio details.</li>
-                <li><strong className="text-[var(--color-foreground)]">Location Data:</strong> Precise GPS coordinates (when enabled) to display nearby workout partners and fitness centers.</li>
-                <li><strong className="text-[var(--color-foreground)]">Device & Log Data:</strong> IP address, device type, operating system version, and mobile app usage metrics.</li>
+              <ul className="space-y-2.5 pl-2">
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Account Registration:</strong>{" "}Legal name, verified email, username, and age confirmation (18+).
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Performance Profile:</strong>{" "}Training goals, facility preferences, discipline, and bio metrics.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Proximity Data:</strong>{" "}Precise GPS coordinates (when enabled) to facilitate real-time facility discovery and partner synchronization.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• System Telemetry:</strong>{" "}IP address, device specifications, operating system version, and application usage patterns.
+                </li>
               </ul>
             </motion.section>
 
             {/* Section 3 */}
             <motion.section
-              id="use-of-information"
+              id="operational-usage"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -176,22 +181,30 @@ export default function PrivacyContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <Eye className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">3. HOW WE USE YOUR DATA</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">3. OPERATIONAL DATA USAGE</h2>
               </div>
               <p>
-                Your information is processed for core platform operations and personalized user experiences:
+                Your information is processed exclusively to support platform operations and enhance your user experience:
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-xs">
-                <li>To display location-based gym recommendations and spotter discovery near your current area.</li>
-                <li>To process subscription features, Spotlight promotions, and user rewards points.</li>
-                <li>To prevent fraudulent accounts, monitor abusive behavior, and ensure community safety.</li>
-                <li>To communicate service updates, security alerts, and customer support notifications.</li>
+              <ul className="space-y-2.5 pl-2">
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Proximity Synchronization:</strong>{" "}To provide location-based facility recommendations and partner discovery.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Commercial Operations:</strong>{" "}To manage &ldquo;Spotlight&rdquo; promotions, reward points, and premium service delivery.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Security & Integrity:</strong>{" "}To prevent fraudulent account creation, mitigate abusive behavior, and ensure community safety.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Platform Communication:</strong>{" "}To transmit critical service updates, security alerts, and support notifications.
+                </li>
               </ul>
             </motion.section>
 
             {/* Section 4 */}
             <motion.section
-              id="data-sharing"
+              id="third-party-sharing"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -202,21 +215,24 @@ export default function PrivacyContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <Share2 className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">4. THIRD-PARTY SHARING</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">4. THIRD-PARTY DATA INTEGRITY</h2>
               </div>
               <p>
-                GYMatch does not sell or rent your personal contact information to third-party advertisers. We only share data under the following circumstances:
+                Gymatch does not monetize your personal contact information through third-party advertising. Data sharing is strictly limited to:
               </p>
-              <p className="text-xs">
-                • <strong className="text-[var(--color-foreground)]">Service Providers:</strong> Trusted third-party vendors for payment processing (PayPal, credit card gateways), push notifications, and hosting infrastructure.
-                <br />
-                • <strong className="text-[var(--color-foreground)]">Legal Compliance:</strong> When required by court order, law enforcement investigation, or to enforce our Terms & Conditions.
-              </p>
+              <ul className="space-y-2.5 pl-2">
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Service Providers:</strong>{" "}Trusted vendors required for payment processing (e.g., Stripe/PayPal), push notification services, and secure cloud hosting infrastructure.
+                </li>
+                <li>
+                  <strong className="text-[var(--color-foreground)]">• Legal Compliance:</strong>{" "}When compelled by lawful court order, law enforcement investigation, or to enforce our Terms of Service.
+                </li>
+              </ul>
             </motion.section>
 
             {/* Section 5 */}
             <motion.section
-              id="cookies-tracking"
+              id="tracking-authentication"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -227,10 +243,10 @@ export default function PrivacyContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <Cookie className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">5. COOKIES & TRACKING TECHNOLOGIES</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">5. TRACKING & SESSION AUTHENTICATION</h2>
               </div>
               <p>
-                Our web application uses essential session cookies and local storage to keep you authenticated, remember your theme preference (Dark/Light mode), and analyze aggregated web traffic patterns. You can manage cookie preferences directly in your web browser.
+                Our platform utilizes essential session cookies and local storage to maintain your authentication state, optimize interface preferences (e.g., Dark/Light mode), and analyze aggregated traffic metrics. You may manage these preferences via your browser settings.
               </p>
             </motion.section>
 
@@ -247,16 +263,16 @@ export default function PrivacyContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <UserCheck className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">6. YOUR PRIVACY RIGHTS</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">6. USER PRIVACY RIGHTS</h2>
               </div>
               <p>
-                Depending on your jurisdiction (including GDPR and CCPA regulations), you possess the right to access, export, correct, or permanently delete your GYMatch user profile and associated history at any time through account settings or by emailing <a href="mailto:privacy@gymatch.com" className="text-[var(--color-accent)] underline">privacy@gymatch.com</a>.
+                In accordance with global standards including GDPR and CCPA, you retain absolute authority over your data. You possess the right to access, export, rectify, or permanently purge your profile and associated history at any time via your account settings or by submitting a request to <a href="mailto:privacy@gymatch.com" className="text-[var(--color-accent)] underline hover:opacity-80 transition-opacity">privacy@gymatch.com</a>.
               </p>
             </motion.section>
 
             {/* Section 7 */}
             <motion.section
-              id="data-protection"
+              id="security-retention"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -270,13 +286,13 @@ export default function PrivacyContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">7. SECURITY & RETENTION</h2>
               </div>
               <p>
-                We implement high-grade SSL/TLS encryption, secure server architecture, and access controls to prevent unauthorized access. User passwords are stored using salted cryptographic hash functions. Data is retained as long as your account remains active or as required by financial auditing laws.
+                We employ industry-standard SSL/TLS encryption, hardened server architecture, and granular access controls to prevent unauthorized data exposure. User credentials are protected via cryptographic hashing. Personal data is retained only for the duration of your active membership or as required by financial and legal auditing mandates.
               </p>
             </motion.section>
 
             {/* Section 8 */}
             <motion.section
-              id="updates-contact"
+              id="policy-evolution"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -287,10 +303,10 @@ export default function PrivacyContentSection() {
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/20 flex items-center justify-center text-[var(--color-accent)] shrink-0">
                   <Bell className="w-5 h-5" />
                 </div>
-                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">8. POLICY UPDATES & CONTACT</h2>
+                <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">8. POLICY EVOLUTION & CONTACT</h2>
               </div>
               <p>
-                We may periodically revise this Privacy Policy. Continued use of GYMatch after revisions are posted constitutes acceptance of the updated terms. For inquiries regarding this document, please contact us at <a href="mailto:contact@gymatch.com" className="text-[var(--color-accent)] underline">contact@gymatch.com</a> or by physical mail to GYMatch Inc., Los Angeles, CA.
+                We may periodically update this Privacy Policy to reflect changes in our infrastructure or regulatory requirements. Continued use of the Gymatch platform following such updates constitutes your acceptance of the revised terms. For inquiries, contact us at <a href="mailto:contact@gymatch.com" className="text-[var(--color-accent)] underline hover:opacity-80 transition-opacity">contact@gymatch.com</a> or via physical mail to Gymatch Inc., Los Angeles, CA.
               </p>
             </motion.section>
 

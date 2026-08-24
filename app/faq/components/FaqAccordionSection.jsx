@@ -7,58 +7,80 @@ import { HelpCircle, ChevronDown, Search } from "lucide-react";
 export const FAQ_ITEMS = [
   {
     category: "General",
-    question: "Where is GYMatch located?",
-    answer: "GYMatch Inc. is based in Los Angeles, CA.",
+    question: "Where is Gymatch based?",
+    answer: "Gymatch Inc. is headquartered in Los Angeles, CA.",
   },
   {
     category: "General",
-    question: "What type of people use GYMatch?",
-    answer: "GYMatch is loved by all types of people because of its easy navigation and cool gym location features. This APP will allow you to search for new gym buddies, invite your friends from Facebook, or upload encouraging Instagram images from a hard leg workout day at the gym! This is definitely a gym friendly APP which is utilized by any and everyone worldwide and from many different backgrounds. Everyone from fitness buffs, novice beginners, and mothers, to traveling corporate executives on the go looking for a gym right away can easily use GYMatch!",
+    question: "Who is the Gymatch platform built for?",
+    answer:
+      "Gymatch is engineered for a diverse global community of dedicated practitioners. From elite strength athletes and martial artists to traveling professionals and those beginning their fitness journey, our platform provides the infrastructure to connect with partners and facilities regardless of your background.",
   },
   {
     category: "General",
-    question: "How do we get in touch with a GYMatch rep?",
-    answer: "Please feel free to send us an email at contact@gymatch.com and one of our GYMatch representatives will contact you within 24hrs. If this is an emergency and have to do with another user then please utilize the 'block' feature on the APP until we have had some time to review his/her account details.",
+    question: "How do I contact the Gymatch team?",
+    answer: (
+      <>
+        Direct your inquiries to{" "}
+        <a
+          href="mailto:contact@gymatch.com"
+          className="text-[var(--color-accent)] underline hover:opacity-80 transition-opacity"
+        >
+          contact@gymatch.com
+        </a>
+        . A representative will respond within 24 hours. For urgent safety
+        concerns regarding other users, utilize the in-app &apos;Block&apos; and
+        &apos;Report&apos; protocols while our team reviews the account.
+      </>
+    ),
   },
   {
     category: "General",
-    question: "What is GYMatch?",
-    answer: "GYMatch, the highly sought after Fitness & Social Networking app that matches people with like-minded gym-buddies and helps to turn Fitness & Health into a community effort. Find the perfect workout partner in your local area to help you get fit and keep you on track. No matter where you are in the world, the GYMatch Fitness app will help you find the right people to help you stay fit, trim and healthy!",
+    question: "What is Gymatch?",
+    answer:
+      "Gymatch is a high-performance fitness and social infrastructure that synchronizes dedicated individuals with like-minded training partners. We turn fitness from a solitary routine into a collaborative, community-driven effort, ensuring you have the network required to reach your performance targets anywhere in the world.",
   },
   {
     category: "General",
-    question: "How did your company get its name?",
-    answer: "GYMatch got its name by putting two common words together. GYM + MATCH = GYMatch! We wanted to come up with a name that could be easily recognizable no matter where you are in the world. That's the GYMatch way!",
+    question: "What is the origin of the name?",
+    answer:
+      "Gymatch is the fusion of two core concepts: GYM + MATCH. We developed a name that is globally recognizable, representing the intersection of facility access and partner synchronization.",
   },
   {
     category: "Pricing & Features",
-    question: "Is GYMatch free?",
-    answer: "The GYMatch APP is 100% free for all iPhone and Android users that want to download it, create a profile and connect with other gym buddies worldwide! There are optional spotlight services which allow users and facilities to gain enhanced visibility.",
+    question: "Is the Gymatch platform free?",
+    answer:
+      "The Gymatch app is free for all iOS and Android users. You can create a profile and connect with the community at no cost. We offer Spotlight Performance Packages for users, trainers, and facilities looking to leverage enhanced visibility and strategic placement within the global training ecosystem.",
   },
   {
     category: "General",
-    question: "How much experience does your company have?",
-    answer: "GYMatch is a modern platform in terms of brand building for a mobile APP but our team has many years in the health and fitness industry. This experience has allowed us to come up with the best Social and Fitness features for this amazing APP! We are experts in the fitness industry and created it based on experience with the fitness guru in mind!",
+    question: "What is the team’s experience level?",
+    answer:
+      "Our team combines years of deep industry expertise in health and fitness with advanced mobile engineering. This hybrid background allows us to build features that are not just technically sound, but optimized for the specific needs of the dedicated athlete.",
   },
   {
     category: "Community",
-    question: "Can anyone upload a testimonial?",
-    answer: "Yes, definitely! Please check out our testimonials section on the homepage or settings. If you like us and want to share your comments then feel free to share your testimonial too! Your testimonial will appear in rotation on the GYMatch homepage under 'Testimonials' for all to see. Just go to 'My Profile' and click on 'Settings' in the app to submit.",
+    question: "Can I share my feedback?",
+    answer:
+      "Absolutely. We value the input of our practitioners. You can submit your testimonial via 'Settings' in the 'My Profile' section. Approved testimonials are showcased on our homepage to highlight the success of our community.",
   },
   {
     category: "Rewards & Points",
-    question: "How do GYMatch points work? What can I get with my points?",
-    answer: "GYMatch points is a reward based system which 'rewards' you for referring any of your family, friends, colleagues or other fitness buddies on the APP. Your cumulative points can earn you 'FREE' spotlight face time! Meaning you can be seen by everyone at any given time! Just invite your friends through Facebook or Instagram to download the app and list you as their referral. MORE points mean MORE face time on Spotlight!",
+    question: "How does the Spotlight Reward System function?",
+    answer:
+      'The Spotlight Reward System is your engine for growth. Every time you invite a training partner, colleague, or fellow fitness enthusiast to the platform, you earn reward points. Accumulate these points and you can redeem them for "Spotlight" visibility-placing your profile at the front of the line for thousands of other members across the network to see. It is the fastest way to build your audience, increase your influence, gain massive exposure, and dominate your local training scene if you’re a trainer.',
   },
   {
     category: "Gym Owners & Trainers",
-    question: "How can Gym Owners and Trainers benefit by signing up for GYMatch?",
-    answer: "GYM Owners and Trainers can benefit immensely from signing up for a Spotlight package as this will increase their visibility to thousands of GYM enthusiasts who would not have known about them beforehand. This immediate exposure leads to increased sales and paid personal training clients locally and internationally.",
+    question: "How do gym owners and trainers benefit from Spotlight?",
+    answer:
+      "This is your competitive advantage. Our Spotlight packages are designed to turn visibility into immediate revenue. For gym owners and trainers, this is the ultimate growth engine-placing your brand directly in front of a high-intent fitness audience of thousands worldwide. Whether you are looking to fill training slots, drive facility memberships, or launch a new brand, Spotlight provides the immediate, scalable exposure you need to dominate your local market and win big.",
   },
   {
     category: "Gym Owners & Trainers",
-    question: "I am a gym owner, how can GYMatch help me get more members to sign up?",
-    answer: "The GYMatch APP will allow you to be seen by everyone thereby increasing your visibility not only to your immediate clientele but new members worldwide. Once a GYM owner registers for a spotlight package, they get the opportunity to tell the GYM community more about themselves, upload images of their trainers, display discount promo codes, and link their location on the GPS locator map!",
+    question: "How can I increase gym membership sign-ups?",
+    answer:
+      "By registering for a Spotlight package, gym owners gain the ability to showcase their facility’s unique value proposition. This includes uploading advanced trainer profiles, displaying exclusive promo codes, posting gym schedules, linking your website, showcasing high-resolution media galleries, and pinning your location on our global discovery engine to attract local and traveling fitness enthusiasts. It is the most effective way to bridge the gap between your facility and the thousands of active users searching for their next training hub.",
   },
 ];
 
@@ -67,10 +89,17 @@ export default function FaqAccordionSection() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "General", "Pricing & Features", "Rewards & Points", "Gym Owners & Trainers"];
+  const categories = [
+    "All",
+    "General",
+    "Pricing & Features",
+    "Rewards & Points",
+    "Gym Owners & Trainers",
+  ];
 
   const filteredFaqs = FAQ_ITEMS.filter((item) => {
-    const matchesCat = selectedCategory === "All" || item.category === selectedCategory;
+    const matchesCat =
+      selectedCategory === "All" || item.category === selectedCategory;
     const matchesSearch =
       searchQuery.trim() === "" ||
       item.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -81,7 +110,6 @@ export default function FaqAccordionSection() {
   return (
     <section className="py-16 sm:py-24 bg-[var(--color-bg-primary)] border-b border-[var(--color-border)]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        
         {/* Search & Category Filter */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -127,8 +155,12 @@ export default function FaqAccordionSection() {
               className="p-10 rounded-3xl bg-[var(--color-surface)] border border-[var(--color-border)] text-center space-y-3"
             >
               <HelpCircle className="w-10 h-10 text-[var(--color-text-muted)] mx-auto opacity-50" />
-              <h3 className="font-bebas text-2xl text-[var(--color-foreground)]">No Matching Questions</h3>
-              <p className="text-xs text-[var(--color-text-muted)]">Try adjusting your search terms or selecting another category.</p>
+              <h3 className="font-bebas text-2xl text-[var(--color-foreground)]">
+                No Matching Questions
+              </h3>
+              <p className="text-xs text-[var(--color-text-muted)]">
+                Try adjusting your search terms or selecting another category.
+              </p>
             </motion.div>
           ) : (
             filteredFaqs.map((faq, idx) => {
@@ -174,7 +206,6 @@ export default function FaqAccordionSection() {
             })
           )}
         </div>
-
       </div>
     </section>
   );

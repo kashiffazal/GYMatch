@@ -4,8 +4,9 @@ import FaqAccordionSection from "./components/FaqAccordionSection";
 import { HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Frequently Asked Questions | GYMatch SaaS App",
-  description: "Find answers to common questions about GYMatch app features, spotters, spotlight packages, and referral points.",
+  title: "Frequently Asked Questions | Gymatch Infrastructure",
+  description:
+    "Get the insights you need on Gymatch infrastructure, partner synchronization, facility discovery, and professional spotlight features.",
 };
 
 export default function FaqPage() {
@@ -13,15 +14,15 @@ export default function FaqPage() {
     <div className="flex flex-col min-h-screen">
       {/* Page Hero */}
       <PageHero
-        badgeText="Got Questions?"
+        badgeText="THE GYMATCH PROTOCOL"
         badgeIcon={<HelpCircle className="w-4 h-4" />}
         title={
           <>
-            FREQUENTLY ASKED <br />
-            <span className="text-[var(--color-accent)]">QUESTIONS</span>
+            EVERYTHING YOU NEED{" "}
+            <span className="text-[var(--color-accent)]">TO KNOW</span>
           </>
         }
-        description="Everything you need to know about GYMatch, spotter matching, GPS gym discovery, and spotlight features."
+        description="Get the insights you need on Gymatch infrastructure, partner synchronization, facility discovery, and professional spotlight features."
         bgImage="/assets/img/group-of-people-training-in-gym-6FYJXB3.jpg"
         showStoreButtons={false}
       />
