@@ -19,7 +19,7 @@ export default function AboutStorySection() {
           >
             <div className="relative w-full h-full min-h-[380px] sm:min-h-[460px] rounded-3xl overflow-hidden border-2 border-[var(--color-accent)] shadow-2xl shadow-[var(--color-accent)]/10 flex flex-col justify-end">
               <Image
-                src="/assets/img/client-image-2.png"
+                src="/assets/img/client-image-3.jpeg"
                 alt="Entrepreneur Otis Jones - Founder & GYMatch Visionary"
                 fill
                 className="object-cover object-center"
@@ -73,10 +73,10 @@ export default function AboutStorySection() {
               </p>
 
               <blockquote className="p-6 rounded-2xl bg-[var(--color-surface)] border-l-4 border-[var(--color-accent)] text-sm italic text-[var(--color-foreground)] shadow-md">
-                &ldquo;72% of the modern world is connected to the Internet via mobile
-                device-by creating this app, we can connect the world&apos;s people
-                to their passion for fitness-it&apos;s a universal language,&rdquo; says
-                Jones.
+                &ldquo;72% of the modern world is connected to the Internet via
+                mobile device-by creating this app, we can connect the
+                world&apos;s people to their passion for fitness-it&apos;s a
+                universal language,&rdquo; says Jones.
               </blockquote>
 
               <p className="text-xs sm:text-sm text-[var(--color-text-muted)] leading-relaxed">
