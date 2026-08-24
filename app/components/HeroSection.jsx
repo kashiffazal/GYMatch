@@ -130,7 +130,7 @@ export default function HeroSection() {
 
             {/* Subtitle Description */}
             <p className="text-base sm:text-lg text-[var(--color-text-muted)] mx-auto lg:mx-0 leading-relaxed ">
-              Stop searching. Start training. Gymatch is the privacy-first
+              Stop searching. Start training. GYMatch is the privacy-first
               infrastructure connecting dedicated fitness enthusiasts and
               martial arts practitioners globally.
             </p>
@@ -167,7 +167,7 @@ export default function HeroSection() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-[var(--color-foreground)]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></span>
-                <span>Your training, digitized. Download Gymatch.</span>
+                <span>Your training, digitized. Download GYMatch.</span>
               </div>
 
               {/* Dual CTA Buttons with Official Store Logos */}

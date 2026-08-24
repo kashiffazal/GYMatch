@@ -12,7 +12,7 @@ export default function BlogListingGrid() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTag, setSelectedTag] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4;
+  const itemsPerPage = 6;
 
   const categories = getCategories();
   const tags = getAllTags();

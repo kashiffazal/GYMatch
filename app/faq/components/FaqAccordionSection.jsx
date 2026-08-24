@@ -7,18 +7,18 @@ import { HelpCircle, ChevronDown, Search } from "lucide-react";
 export const FAQ_ITEMS = [
   {
     category: "General",
-    question: "Where is Gymatch based?",
-    answer: "Gymatch Inc. is headquartered in Los Angeles, CA.",
+    question: "Where is GYMatch based?",
+    answer: "GYMatch Inc. is headquartered in Los Angeles, CA.",
   },
   {
     category: "General",
-    question: "Who is the Gymatch platform built for?",
+    question: "Who is the GYMatch platform built for?",
     answer:
-      "Gymatch is engineered for a diverse global community of dedicated practitioners. From elite strength athletes and martial artists to traveling professionals and those beginning their fitness journey, our platform provides the infrastructure to connect with partners and facilities regardless of your background.",
+      "GYMatch is engineered for a diverse global community of dedicated practitioners. From elite strength athletes and martial artists to traveling professionals and those beginning their fitness journey, our platform provides the infrastructure to connect with partners and facilities regardless of your background.",
   },
   {
     category: "General",
-    question: "How do I contact the Gymatch team?",
+    question: "How do I contact the GYMatch team?",
     answer: (
       <>
         Direct your inquiries to{" "}
@@ -36,21 +36,21 @@ export const FAQ_ITEMS = [
   },
   {
     category: "General",
-    question: "What is Gymatch?",
+    question: "What is GYMatch?",
     answer:
-      "Gymatch is a high-performance fitness and social infrastructure that synchronizes dedicated individuals with like-minded training partners. We turn fitness from a solitary routine into a collaborative, community-driven effort, ensuring you have the network required to reach your performance targets anywhere in the world.",
+      "GYMatch is a high-performance fitness and social infrastructure that synchronizes dedicated individuals with like-minded training partners. We turn fitness from a solitary routine into a collaborative, community-driven effort, ensuring you have the network required to reach your performance targets anywhere in the world.",
   },
   {
     category: "General",
     question: "What is the origin of the name?",
     answer:
-      "Gymatch is the fusion of two core concepts: GYM + MATCH. We developed a name that is globally recognizable, representing the intersection of facility access and partner synchronization.",
+      "GYMatch is the fusion of two core concepts: GYM + MATCH. We developed a name that is globally recognizable, representing the intersection of facility access and partner synchronization.",
   },
   {
     category: "Pricing & Features",
-    question: "Is the Gymatch platform free?",
+    question: "Is the GYMatch platform free?",
     answer:
-      "The Gymatch app is free for all iOS and Android users. You can create a profile and connect with the community at no cost. We offer Spotlight Performance Packages for users, trainers, and facilities looking to leverage enhanced visibility and strategic placement within the global training ecosystem.",
+      "The GYMatch app is free for all iOS and Android users. You can create a profile and connect with the community at no cost. We offer Spotlight Performance Packages for users, trainers, and facilities looking to leverage enhanced visibility and strategic placement within the global training ecosystem.",
   },
   {
     category: "General",

@@ -230,7 +230,7 @@ export default function AppScreensGallery() {
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Experience the Gymatch mobile ecosystem. Our interface is engineered
+            Experience the GYMatch mobile ecosystem. Our interface is engineered
             for speed, clarity, and seamless navigation across every core
             training workflow.
           </p>

@@ -4,9 +4,9 @@ import PrivacyContentSection from "./components/PrivacyContentSection";
 import { ShieldCheck } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Architecture | Gymatch Data Protection Protocols",
+  title: "Privacy Architecture | GYMatch Data Protection Protocols",
   description:
-    "Your privacy is a foundational component of the Gymatch infrastructure. This policy outlines our protocols for data security, location management, and the protection of your personal profile.",
+    "Your privacy is a foundational component of the GYMatch infrastructure. This policy outlines our protocols for data security, location management, and the protection of your personal profile.",
 };
 
 export default function PrivacyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
             <span className="text-[var(--color-accent)]">ARCHITECTURE</span>
           </>
         }
-        description="Your privacy is a foundational component of the Gymatch infrastructure. This policy outlines our protocols for data security, location management, and the protection of your personal profile."
+        description="Your privacy is a foundational component of the GYMatch infrastructure. This policy outlines our protocols for data security, location management, and the protection of your personal profile."
         bgImage="/assets/img/strong-athlete-with-dumbbells-training-in-gym.jpg"
         showStoreButtons={false}
       />

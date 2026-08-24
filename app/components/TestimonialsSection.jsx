@@ -80,7 +80,7 @@ export default function TestimonialsSection() {
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Discover how Gymatch is redefining the training experience for
+            Discover how GYMatch is redefining the training experience for
             athletes, coaches, and practitioners nationwide.
           </p>
         </div>

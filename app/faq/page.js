@@ -4,9 +4,9 @@ import FaqAccordionSection from "./components/FaqAccordionSection";
 import { HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Frequently Asked Questions | Gymatch Infrastructure",
+  title: "Frequently Asked Questions | GYMatch Infrastructure",
   description:
-    "Get the insights you need on Gymatch infrastructure, partner synchronization, facility discovery, and professional spotlight features.",
+    "Get the insights you need on GYMatch infrastructure, partner synchronization, facility discovery, and professional spotlight features.",
 };
 
 export default function FaqPage() {
@@ -22,7 +22,7 @@ export default function FaqPage() {
             <span className="text-[var(--color-accent)]">TO KNOW</span>
           </>
         }
-        description="Get the insights you need on Gymatch infrastructure, partner synchronization, facility discovery, and professional spotlight features."
+        description="Get the insights you need on GYMatch infrastructure, partner synchronization, facility discovery, and professional spotlight features."
         bgImage="/assets/img/group-of-people-training-in-gym-6FYJXB3.jpg"
         showStoreButtons={false}
       />

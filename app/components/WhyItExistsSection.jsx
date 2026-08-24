@@ -84,7 +84,7 @@ export default function WhyItExistsSection() {
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
             Most fitness apps focus on passive logging or calorie tracking.
-            Gymatch optimizes the human variable-connecting dedicated
+            GYMatch optimizes the human variable-connecting dedicated
             practitioners to train together securely and navigate training hubs
             with total precision.
           </p>

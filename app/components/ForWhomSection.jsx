@@ -49,7 +49,7 @@ const PERSONAS = [
       "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.jpg",
     badge: "Professional Trainer Showcase",
     bullets: [
-      "Promote your profile directly within the Gymatch ecosystem.",
+      "Promote your profile directly within the GYMatch ecosystem.",
       "Connect with new clientele active within your immediate training radius.",
       "Host group sessions and specialized training blocks to build your business.",
     ],
@@ -92,7 +92,7 @@ export default function ForWhomSection() {
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
             Whether you are pushing heavy iron, training for martial arts,
-            coaching clients, or traveling abroad-Gymatch is the infrastructure
+            coaching clients, or traveling abroad-GYMatch is the infrastructure
             built for those who treat performance as a discipline.
           </p>
         </div>

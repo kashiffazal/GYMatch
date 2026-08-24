@@ -18,7 +18,7 @@ const STEPS = [
     title: "1. Automated Proximity Sensing",
     subtitle: "Open the app and enable location services.",
     description:
-      "Gymatch automatically syncs to your coordinates. Local facility listings update dynamically, whether you are at home or traveling.",
+      "GYMatch automatically syncs to your coordinates. Local facility listings update dynamically, whether you are at home or traveling.",
     screen: "/assets/app/others/HOME.png",
   },
   {

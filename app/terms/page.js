@@ -4,9 +4,9 @@ import TermsContentSection from "./components/TermsContentSection";
 import { FileText } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Service | Gymatch Legal Protocols",
+  title: "Terms of Service | GYMatch Legal Protocols",
   description:
-    "This document constitutes a legally binding agreement governing your access to and use of the Gymatch ecosystem, including our website, mobile applications, and partner synchronization services.",
+    "This document constitutes a legally binding agreement governing your access to and use of the GYMatch ecosystem, including our website, mobile applications, and partner synchronization services.",
 };
 
 export default function TermsPage() {
@@ -24,7 +24,7 @@ export default function TermsPage() {
             </span>
           </>
         }
-        description="This document constitutes a legally binding agreement governing your access to and use of the Gymatch ecosystem, including our website, mobile applications, and partner synchronization services."
+        description="This document constitutes a legally binding agreement governing your access to and use of the GYMatch ecosystem, including our website, mobile applications, and partner synchronization services."
         bgImage="/assets/img/strong-male-athlete-running-on-modern-treadmill.jpg"
         showStoreButtons={false}
       />
