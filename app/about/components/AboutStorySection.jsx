@@ -73,9 +73,9 @@ export default function AboutStorySection() {
               </p>
 
               <blockquote className="p-6 rounded-2xl bg-[var(--color-surface)] border-l-4 border-[var(--color-accent)] text-sm italic text-[var(--color-foreground)] shadow-md">
-                “72% of the modern world is connected to the Internet via mobile
-                device-by creating this app, we can connect the world's people
-                to their passion for fitness-it's a universal language,” says
+                &ldquo;72% of the modern world is connected to the Internet via mobile
+                device-by creating this app, we can connect the world&apos;s people
+                to their passion for fitness-it&apos;s a universal language,&rdquo; says
                 Jones.
               </blockquote>
 

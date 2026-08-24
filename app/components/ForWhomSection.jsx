@@ -15,57 +15,57 @@ import styles from "./ForWhomSection.module.css";
 const PERSONAS = [
   {
     id: "lifters",
-    title: "HEAVY LIFTERS & BODYBUILDERS",
-    tagline: "Never miss a heavy bench press or squat set again.",
+    title: "Heavy Lifters & Bodybuilders",
+    tagline: "Execute peak performance without the risk.",
     icon: Dumbbell,
     image:
       "/assets/img/muscular-bodybuilder-training-arms-with-barbell-RSUQXF5.jpg",
-    badge: "Spotter Match Feed",
+    badge: "Live Partner Synchronization",
     bullets: [
-      "Locate reliable, experienced spotters at your exact gym",
-      "Connect with powerlifters matching your strength goals",
-      "Safely push top sets without weightlifting alone",
+      "Locate reliable, experienced spotters at your exact facility.",
+      "Align with powerlifters sharing your strength benchmarks.",
+      "Safely execute peak sets without training in isolation.",
     ],
   },
   {
     id: "combat",
-    title: "BOXING & MMA TRAINEES",
-    tagline: "Match with sparring partners in your weight class.",
+    title: "Boxing, MMA & BJJ Practitioners",
+    tagline: "Match with partners in your weight class.",
     icon: Shield,
     image: "/assets/img/two-women-boxing-in-the-ring-box-training.jpg",
-    badge: "Combat Academy Finder",
+    badge: "Technical Training Network",
     bullets: [
-      "Discover combat gyms, boxing rings, and MMA cages nearby",
-      "Coordinate mitt work, BJJ rolling, and pad sessions",
-      "Connect with disciplined combat sport enthusiasts",
+      "Discover boxing rings, MMA cages, and specialized studios nearby.",
+      "Coordinate technical drills, BJJ sessions, and tactical training.",
+      "Connect with disciplined martial arts enthusiasts.",
     ],
   },
   {
     id: "trainers",
-    title: "PERSONAL TRAINERS & INSTRUCTORS",
-    tagline: "Expand your local fitness client base effortlessly.",
+    title: "Personal Trainers & Instructors",
+    tagline: "Scale your local practice effortlessly.",
     icon: UserCheck,
     image:
       "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.jpg",
-    badge: "Spotlight Trainer Profile",
+    badge: "Professional Trainer Showcase",
     bullets: [
-      "Promote spotlight trainer listings on gym detail pages",
-      "Meet new gym clientele active around your city",
-      "Host group fitness workouts and outdoor training",
+      "Promote your profile directly within the Gymatch ecosystem.",
+      "Connect with new clientele active within your immediate training radius.",
+      "Host group sessions and specialized training blocks to build your business.",
     ],
   },
   {
     id: "travelers",
-    title: "TRAVELERS & FITNESS NOMADS",
+    title: "Travelers & Fitness Nomads",
     tagline: "Train seamlessly anywhere in the world.",
     icon: Globe,
     image:
       "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.jpg",
-    badge: "Global GPS Engine",
+    badge: "Global Proximity Engine",
     bullets: [
-      "Automatic live GPS discovery in London, Miami, LA, or Tokyo",
-      "Compare gym day passes, amenities, and hours",
-      "Connect with local gym members for insider spots",
+      "Automatic live location discovery from Tokyo to London to Miami to LA and beyond.",
+      "Compare gym day passes, amenities, and hours.",
+      "Connect with local gym members for insider spots.",
     ],
   },
 ];
@@ -86,14 +86,14 @@ export default function ForWhomSection() {
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            WHO BENEFITS FROM{" "}
-            <span className="text-[var(--color-accent)]">GYMATCH?</span>
+            ENGINEERED FOR THE{" "}
+            <span className="text-[var(--color-accent)]">DEDICATED</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Whether you are pushing heavy iron, training for a fight night,
-            coaching clients, or traveling abroad-GYMatch is tailored for
-            serious fitness enthusiasts.
+            Whether you are pushing heavy iron, training for martial arts,
+            coaching clients, or traveling abroad-Gymatch is the infrastructure
+            built for those who treat performance as a discipline.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ export default function ForWhomSection() {
                   </h3>
 
                   <p className="text-xs sm:text-sm text-[var(--color-accent)] font-semibold italic">
-                    "{persona.tagline}"
+                    &ldquo;{persona.tagline}&rdquo;
                   </p>
 
                   {/* Bullet Points */}

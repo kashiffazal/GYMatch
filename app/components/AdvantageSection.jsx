@@ -17,42 +17,42 @@ import styles from "./AdvantageSection.module.css";
 const LEFT_ADVANTAGES = [
   {
     icon: MapPin,
-    title: "Instant GPS Detection",
+    title: "Seamless Proximity Discovery",
     description:
-      "Automatic live GPS discovery anywhere in the world. No manual city typing or location setup required.",
+      "Locate elite training facilities worldwide with automated location sensing. No manual configuration required.",
   },
   {
     icon: Users,
-    title: "Active Spotter Feed",
+    title: "Live Training Pulse",
     description:
-      "Real-time feed showing members looking for training partners currently active at your specific gym.",
+      "A real-time stream of athletes actively seeking training partners within your specific facility.",
   },
   {
     icon: Shield,
-    title: "Privacy Protected Chat",
+    title: "Encrypted Communication",
     description:
-      "Temporary auto-expiring workout threads keep your home address and personal phone numbers private.",
+      "Ephemeral, encrypted workout channels ensure your personal data and contact details remain strictly private.",
   },
 ];
 
 const RIGHT_ADVANTAGES = [
   {
     icon: Clock,
-    title: "24/7 Gym Discovery",
+    title: "Facility Intelligence",
     description:
-      "Explore operating hours, guest passes, equipment lists, and amenities for gyms around you round-the-clock.",
+      "Access a comprehensive database of operating hours, guest access, and equipment specs for any facility.",
   },
   {
     icon: Zap,
-    title: "Discipline Matching",
+    title: "Precision Alignment",
     description:
-      "Filter partners by exact training style-Heavy Bodybuilding, Boxing, MMA Sparring, CrossFit, or Yoga.",
+      "Filter training partners by modalities, from powerlifting and combat sports to high-intensity conditioning.",
   },
   {
     icon: Compass,
-    title: "Spotlight Trainers",
+    title: "Professional Integration",
     description:
-      "Connect with certified local personal trainers and fitness instructors active in your community.",
+      "Seamlessly connect with verified instructors and elite coaches within your immediate training ecosystem.",
   },
 ];
 
@@ -82,11 +82,11 @@ export default function AdvantageSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
             <Sparkles className="w-4 h-4" />
-            <span>What's the benefits of GYMatch?</span>
+            <span>Why leave your training to chance?</span>
           </div>
 
           <h2 className="font-bebas text-5xl sm:text-7xl text-[var(--color-foreground)] tracking-wide">
-            GYMATCH PLATFORM <br />
+            THE GYMATCH{" "}
             <span className="text-[var(--color-accent)]">ADVANTAGE</span>
           </h2>
         </div>

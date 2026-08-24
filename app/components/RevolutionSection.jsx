@@ -42,7 +42,7 @@ export default function RevolutionSection() {
               </h2>
 
               <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-                Compare traditional gym searching friction with GYMatch's real-time SaaS platform.
+                Compare traditional gym searching friction with GYMatch&apos;s real-time SaaS platform.
               </p>
             </div>
 

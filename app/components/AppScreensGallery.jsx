@@ -15,10 +15,10 @@ import styles from "./AppScreensGallery.module.css";
 
 /* ── Screen Data ─────────────────────────────────────────────────────────── */
 const CATEGORIES = [
-  { id: "all", label: "All Screens" },
-  { id: "discovery", label: "Discovery & Maps" },
-  { id: "matching", label: "Partner Matching" },
-  { id: "messaging", label: "Chat & Profile" },
+  { id: "all", label: "The Full Experience" },
+  { id: "discovery", label: "Discovery & Proximity" },
+  { id: "matching", label: "Partner Synchronization" },
+  { id: "messaging", label: "Secure Coordination" },
 ];
 
 const SCREENS = [
@@ -225,14 +225,14 @@ export default function AppScreensGallery() {
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide leading-tight">
-            SMART & BEAUTIFUL <br className="sm:hidden" />{" "}
-            <span className="text-[var(--color-accent)]">UI SCREENS</span>
+            INTUITIVE INTERFACE{" "}
+            <span className="text-[var(--color-accent)]">DESIGN</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Experience the clean, modern visual design of the GYMatch mobile
-            application across all main user flows, interactions, and key
-            fitness experiences.
+            Experience the Gymatch mobile ecosystem. Our interface is engineered
+            for speed, clarity, and seamless navigation across every core
+            training workflow.
           </p>
         </div>
 

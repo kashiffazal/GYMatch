@@ -14,47 +14,47 @@ import {
 const WHY_POINTS = [
   {
     icon: Flame,
-    title: "NEVER TRAIN WITHOUT A SPOTTER",
+    title: "Safety-First Performance",
     description:
-      "Pushing heavy bench presses or squat personal records alone is dangerous. GYMatch connects you with verified spotters currently training at your gym.",
+      "Mitigate risk during high-intensity sessions. Connect with verified spotters currently training on the floor.",
     bgImage:
       "/assets/img/muscular-bodybuilder-training-arms-with-barbell-RSUQXF5.jpg",
   },
   {
     icon: Globe,
-    title: "TRAVEL & DISCOVER GYMS ANYWHERE",
+    title: "Global Facility Access",
     description:
-      "Whether in London, Miami, LA, or Tokyo-open the app and automatically discover gyms, CrossFit boxes, and martial arts studios around your exact location.",
+      "Whether in London or Tokyo, our proximity engine maps regional studios and training hubs to your immediate location.",
     bgImage:
       "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.jpg",
   },
   {
     icon: Target,
-    title: "MATCH BY DISCIPLINE & GOALS",
+    title: "Precision Alignment",
     description:
-      "Find partners who match your exact training intensity-whether you are training for MMA fight night, bodybuilding hyper-trophy, or yoga flexibility.",
+      "Sync with partners who match your exact intensity-from combat conditioning and hypertrophy to mobility training.",
     bgImage: "/assets/img/two-women-boxing-in-the-ring-box-training.jpg",
   },
   {
     icon: Lock,
-    title: "PRIVACY-FIRST SOCIAL LAYER",
+    title: "Encrypted Interaction",
     description:
-      "Your exact home coordinates are never revealed. You only appear as active within specific public gym locations with safe temporary chat channels.",
+      "Your privacy is absolute. Appear only within public training zones via ephemeral, secure messaging channels.",
     bgImage: "/assets/img/cross-training-young-woman-exercising-at-the-gym.jpg",
   },
   {
     icon: HeartHandshake,
-    title: "BUILD FITNESS COMMUNITIES",
+    title: "Ecosystem Integration",
     description:
-      "Connect with local instructors, personal trainers, and gym communities. Transform workouts from a routine chore into an inspiring team effort.",
+      "Engage with local coaches and training circles. Transform isolated routines into collaborative, high-performance efforts.",
     bgImage:
       "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.jpg",
   },
   {
     icon: Shield,
-    title: "MODERATION & BLOCK / REPORT",
+    title: "Standardized Governance",
     description:
-      "Built-in safety features ensure respectful interactions. Full block and report tools let you keep your workout experience safe and positive.",
+      "Maintain a professional environment with robust moderation, blocking, and reporting protocols to ensure a secure experience.",
     bgImage:
       "/assets/img/fitness-sport-training-gym-success-and-lifestyle-JKSDH2B.jpg",
   },
@@ -74,18 +74,19 @@ export default function WhyItExistsSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
             <Target className="w-4 h-4" />
-            <span>YOUR CHOICE</span>
+            <span>Why settle for static tracking?</span>
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            WHY GYMATCH IS{" "}
-            <span className="text-[var(--color-accent)]">YOUR CHOICE</span>
+            THE GYMATCH{" "}
+            <span className="text-[var(--color-accent)]">FRAMEWORK</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Most fitness apps log workouts or track calories-GYMatch solves the
-            human element of fitness: connecting dedicated people to train
-            together safely and explore fitness hubs effortlessly.
+            Most fitness apps focus on passive logging or calorie tracking.
+            Gymatch optimizes the human variable-connecting dedicated
+            practitioners to train together securely and navigate training hubs
+            with total precision.
           </p>
         </div>
 

@@ -130,10 +130,10 @@ export default function TermsContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">1. LEGAL AGREEMENT & AMENDMENTS</h2>
               </div>
               <p>
-                This web page represents a legal document that serves as our Terms and Conditions and governs the legal terms of our website, http://www.GYMatch.com, sub-domains, and associated web-based and mobile applications (collectively, "Website"), owned and operated by GYMatch.
+                This web page represents a legal document that serves as our Terms and Conditions and governs the legal terms of our website, http://www.GYMatch.com, sub-domains, and associated web-based and mobile applications (collectively, &ldquo;Website&rdquo;), owned and operated by GYMatch.
               </p>
               <p>
-                These Terms and Conditions, along with our Privacy Policy, mobile license agreements, and posted guidelines ("Legal Terms"), constitute the entire agreement between you and GYMatch. By using our Website, you agree to fully comply with and be bound by our Legal Terms. If you do not accept these terms, you must immediately discontinue use of our Website and mobile app.
+                These Terms and Conditions, along with our Privacy Policy, mobile license agreements, and posted guidelines (&ldquo;Legal Terms&rdquo;), constitute the entire agreement between you and GYMatch. By using our Website, you agree to fully comply with and be bound by our Legal Terms. If you do not accept these terms, you must immediately discontinue use of our Website and mobile app.
               </p>
             </motion.section>
 
@@ -153,7 +153,7 @@ export default function TermsContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">2. DEFINITIONS</h2>
               </div>
               <p>
-                The terms "us" or "we" or "our" refers to GYMatch. A "Visitor" is someone who browses our Website without registering. A "Member" is an individual who has completed registration with us to use our Service. Our "Service" represents the functionality and spotter discovery tools offered through our Website and apps to Members. All graphics, text, audio, video, and data offered are collectively known as "Content".
+                The terms &ldquo;us&rdquo; or &ldquo;we&rdquo; or &ldquo;our&rdquo; refers to GYMatch. A &ldquo;Visitor&rdquo; is someone who browses our Website without registering. A &ldquo;Member&rdquo; is an individual who has completed registration with us to use our Service. Our &ldquo;Service&rdquo; represents the functionality and spotter discovery tools offered through our Website and apps to Members. All graphics, text, audio, video, and data offered are collectively known as &ldquo;Content&rdquo;.
               </p>
             </motion.section>
 
@@ -193,7 +193,7 @@ export default function TermsContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">4. WARRANTY DISCLAIMER & LIMITATION OF LIABILITY</h2>
               </div>
               <p>
-                We will not be liable for indirect, special, or consequential damages, or any loss of revenue, profits, or data arising in connection with this Agreement. This site and its services are provided on an "as is" and "as available" basis. GYMatch makes no express or implied warranties or representations regarding fitness, merchantability, or uninterrupted service operation.
+                We will not be liable for indirect, special, or consequential damages, or any loss of revenue, profits, or data arising in connection with this Agreement. This site and its services are provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis. GYMatch makes no express or implied warranties or representations regarding fitness, merchantability, or uninterrupted service operation.
               </p>
             </motion.section>
 

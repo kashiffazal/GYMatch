@@ -3,92 +3,109 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PhoneMockup from "@/components/PhoneMockup";
-import { MapPin, Users, Map, Dumbbell, MessageCircle, Heart, ChevronRight, Layers } from "lucide-react";
+import {
+  MapPin,
+  Users,
+  Map,
+  Dumbbell,
+  MessageCircle,
+  Heart,
+  ChevronRight,
+  Layers,
+} from "lucide-react";
 
 const FEATURES = [
   {
     id: "geolocation",
     icon: MapPin,
-    title: "REAL-TIME GEOLOCATION ENGINE",
-    subtitle: "Automatic GPS Detection",
+    title: "Automated Proximity Sensing",
+    subtitle: "Instant Location Sync",
+
+    title_new: "Automated Proximity Sync",
+    subtitle_new: "Seamless location identification",
+
     description:
-      "Automatically detects your exact GPS coordinates upon opening the app. Instantly lists nearby gyms, fitness centers, and academies sorted by distance and rating without typing city names.",
+      "Syncs instantly to your location upon launch. Access nearby facilities and training hubs sorted by proximity and rating-no manual input required.",
     screen: "/assets/app/others/HOME.png",
   },
   {
     id: "partner-feed",
     icon: Users,
-    title: "ACTIVE WORKOUT PARTNER FEED",
-    subtitle: "Find Spotters At Your Gym",
+    title: "Live Partner Synchronization",
+    subtitle: "Find Training Partners",
     description:
-      "See who is currently active and available to train at your gym. View workout preferences, experience levels, and send instant 'Invite to Train' requests.",
+      "View members currently active at your facility. Review workout preferences and experience levels to send instant 'Invite to Train' requests.",
     screen: "/assets/app/guest/Guest Profile.png",
   },
   {
     id: "interactive-map",
     icon: Map,
-    title: "INTERACTIVE LIVE MAP EXPLORER",
-    subtitle: "Pinpoint Nearby Fitness Hubs",
+    title: "Dynamic Mapping Interface",
+    subtitle: "Visual Hub Explorer",
     description:
-      "Visual map interface displaying live gym markers around you. Tap markers to preview mini gym cards, get instant directions, and see active member counts.",
+      "A visual, real-time map displaying training hubs around you. Tap markers to preview facility cards, navigation routes, and current member density.",
     screen: "/assets/app/others/Explore.png",
   },
   {
     id: "gym-details",
     icon: Dumbbell,
-    title: "DETAILED GYM AMENITIES & INFO",
-    subtitle: "Photos, Timings & Features",
+    title: "Comprehensive Facility Intelligence",
+    subtitle: "Specs, Amenities & Hours",
     description:
-      "Inspect gym photo galleries, operating hours, contact details, user ratings, and verified amenities like sauna, cardio decks, free weights, and parking.",
+      "Deep-dive into facility photo galleries, operational hours, verified amenity lists, and member ratings to find your ideal training environment.",
     screen: "/assets/app/guest/Gym Detail as guest.png",
   },
   {
     id: "temporary-chat",
     icon: MessageCircle,
-    title: "LIGHTWEIGHT AUTO-EXPIRING CHAT",
-    subtitle: "Safety & Privacy First",
+    title: "Secure Coordination Protocol",
+    subtitle: "Ephemeral & Encrypted",
     description:
-      "Coordinates workouts cleanly without exposing personal phone numbers or social media. Conversations auto-expire after workout completion for maximum safety.",
+      "Coordinate sessions without exposing personal contact details. Conversations are encrypted and auto-expire upon workout completion for maximum privacy.",
     screen: "/assets/app/chats/Active Chat UI.png",
   },
   {
     id: "favorites",
     icon: Heart,
-    title: "SAVED FAVORITE GYMS",
-    subtitle: "Instant Quick Access",
+    title: "Personalized Hub Management",
+    subtitle: "Rapid Access & Updates",
     description:
-      "Save your top gym hubs to your profile for quick navigation, instant partner updates, and fast check-ins whenever you get ready to lift.",
+      "Save your preferred training locations to your profile for rapid navigation, instant partner updates, and streamlined access.",
     screen: "/assets/app/others/Fav Screen.png",
   },
 ];
 
 export default function AppFeaturesShowcase() {
   const [activeFeatureId, setActiveFeatureId] = useState("geolocation");
-  const currentFeature = FEATURES.find((f) => f.id === activeFeatureId) || FEATURES[0];
+  const currentFeature =
+    FEATURES.find((f) => f.id === activeFeatureId) || FEATURES[0];
 
   return (
-    <section id="features" className="py-20 sm:py-28 bg-[var(--color-surface)]/40 border-y border-[var(--color-border)] relative">
+    <section
+      id="features"
+      className="py-20 sm:py-28 bg-[var(--color-surface)]/40 border-y border-[var(--color-border)] relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
             <Layers className="w-4 h-4" />
-            <span>Powerful Features</span>
+            <span>The Feature Suite</span>
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            EXPLORE <span className="text-[var(--color-accent)]">APP FEATURES</span>
+            EXPLORE THE GYMATCH{" "}
+            <span className="text-[var(--color-accent)]">INTERFACE</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Click on any feature below to inspect live mobile app screens and capabilities in action.
+            Click any feature below to inspect our mobile capabilities in
+            action.
           </p>
         </div>
 
         {/* Side-by-Side Interactive Feature Showcase */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
           {/* Left Column: Feature Buttons */}
           <div className="lg:col-span-7 space-y-3">
             {FEATURES.map((feature) => {
@@ -120,14 +137,18 @@ export default function AppFeaturesShowcase() {
                       <div className="flex items-center justify-between">
                         <h3
                           className={`font-bebas text-xl sm:text-2xl tracking-wide ${
-                            isActive ? "text-[var(--color-foreground)]" : "text-[var(--color-text-muted)]"
+                            isActive
+                              ? "text-[var(--color-foreground)]"
+                              : "text-[var(--color-text-muted)]"
                           }`}
                         >
                           {feature.title}
                         </h3>
                         <ChevronRight
                           className={`w-5 h-5 transition-transform ${
-                            isActive ? "text-[var(--color-accent)] translate-x-1" : "text-[var(--color-text-muted)]/50"
+                            isActive
+                              ? "text-[var(--color-accent)] translate-x-1"
+                              : "text-[var(--color-text-muted)]/50"
                           }`}
                         />
                       </div>
@@ -164,17 +185,23 @@ export default function AppFeaturesShowcase() {
                   alt={currentFeature.title}
                   badge={
                     <div className="px-5 py-2.5 rounded-full bg-[var(--color-surface)]/95 backdrop-blur-xl border border-[var(--color-border)] shadow-xl text-center">
-                      <div className="text-xs font-bold text-[var(--color-foreground)]">{currentFeature.title}</div>
-                      <div className="text-[10px] text-[var(--color-accent)] uppercase tracking-wider">{currentFeature.subtitle}</div>
+                      <div className="text-xs font-bold text-[var(--color-foreground)]">
+                        {currentFeature.title_new
+                          ? currentFeature.title_new
+                          : currentFeature.title}
+                      </div>
+                      <div className="text-[10px] text-[var(--color-accent)] uppercase tracking-wider">
+                        {currentFeature.subtitle_new
+                          ? currentFeature.subtitle_new
+                          : currentFeature.subtitle}
+                      </div>
                     </div>
                   }
                 />
               </motion.div>
             </AnimatePresence>
           </div>
-
         </div>
-
       </div>
     </section>
   );

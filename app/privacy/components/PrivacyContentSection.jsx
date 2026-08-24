@@ -130,7 +130,7 @@ export default function PrivacyContentSection() {
                 <h2 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">1. OVERVIEW & SCOPE</h2>
               </div>
               <p>
-                At GYMatch, we take your privacy seriously. This Privacy Policy details how GYMatch Inc. ("GYMatch", "we", "us", or "our") collects, processes, stores, and safeguards personal information when you utilize our website (http://www.GYMatch.com), sub-domains, and associated mobile applications available on iOS and Android.
+                At GYMatch, we take your privacy seriously. This Privacy Policy details how GYMatch Inc. (&ldquo;GYMatch&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) collects, processes, stores, and safeguards personal information when you utilize our website (http://www.GYMatch.com), sub-domains, and associated mobile applications available on iOS and Android.
               </p>
               <p>
                 By creating a GYMatch account or using our real-time gym discovery and workout partner matching features, you agree to the collection and use of information in accordance with this policy.

@@ -68,19 +68,20 @@ export default function TestimonialsSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
             <MessageSquare className="w-4 h-4" />
-            <span>Community Feedback</span>
+            <span>Community Validation</span>
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            BUILT FOR COMMITMENT. <br />
+            BUILT FOR COMMITMENT.
+            <br />
             <span className="text-[var(--color-accent)]">
               PROVEN BY MEMBERS.
             </span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Read how GYMatch has transformed the workout experience for lifters,
-            trainers, and fitness enthusiasts across the country.
+            Discover how Gymatch is redefining the training experience for
+            athletes, coaches, and practitioners nationwide.
           </p>
         </div>
 
@@ -108,7 +109,7 @@ export default function TestimonialsSection() {
 
                 {/* Quote Text */}
                 <p className="text-sm text-[var(--color-foreground)] leading-relaxed italic">
-                  "{item.quote}"
+                  &ldquo;{item.quote}&rdquo;
                 </p>
               </div>
 
@@ -147,14 +148,14 @@ export default function TestimonialsSection() {
           >
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-accent)] text-black text-[10px] font-extrabold uppercase tracking-widest">
-                ★ Platform Spotlight
+                ★ THE PERFORMANCE SHIFT
               </div>
               <h3 className="font-bebas text-3xl text-[var(--color-foreground)] tracking-wide">
-                JOIN OVER 50,000+ FITNESS LOVERS
+                50,000+ STRONG. NO COMPROMISE.
               </h3>
               <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
-                Connect with spotters, find new gyms, and elevate your fitness
-                journey with GYMatch SaaS mobile application.
+                Stop training in isolation. Join the infrastructure built for
+                those who treat performance as a discipline.
               </p>
             </div>
 

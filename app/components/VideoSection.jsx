@@ -34,17 +34,17 @@ export default function VideoSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
             <Sparkles className="w-4 h-4" />
-            <span>Official App Trailer</span>
+            <span>The Platform Experience</span>
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
             SEE GYMATCH IN{" "}
-            <span className="text-[var(--color-accent)]">ACTION</span>
+            <span className="text-[var(--color-accent)]">MOTION</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Watch our official promo video demonstrating real-time gym discovery
-            and instant workout partner matching.
+            Watch our official overview and see how real-time discovery and
+            partner synchronization optimize your entire training workflow.
           </p>
         </div>
 

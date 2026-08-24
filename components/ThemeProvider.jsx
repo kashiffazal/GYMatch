@@ -13,10 +13,16 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("gymatch-theme") || "dark";
-    setTheme(savedTheme);
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
     document.documentElement.setAttribute("data-theme", savedTheme);
-    setMounted(true);
+
+    // Defer state update to avoid cascading render warning in effect
+    const timer = setTimeout(() => {
+      setTheme(savedTheme);
+      setMounted(true);
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const toggleTheme = () => {

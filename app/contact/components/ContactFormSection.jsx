@@ -41,7 +41,7 @@ export default function ContactFormSection() {
             <div className="space-y-6">
               <span className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">Direct Support</span>
               <h2 className="font-bebas text-4xl sm:text-5xl text-[var(--color-foreground)] leading-tight">
-                WE'RE HERE TO HELP YOU REACH YOUR GOALS
+                WE&apos;RE HERE TO HELP YOU REACH YOUR GOALS
               </h2>
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
                 Send us a message using the contact form, or connect directly through our official email address.

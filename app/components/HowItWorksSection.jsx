@@ -15,37 +15,37 @@ const STEPS = [
   {
     id: 1,
     icon: Navigation,
-    title: "1. AUTO GPS LOCATION DETECTION",
-    subtitle: "Open the App & Allow Location Access",
+    title: "1. Automated Proximity Sensing",
+    subtitle: "Open the app and enable location services.",
     description:
-      "GYMatch automatically retrieves your live GPS coordinates. Instant local gym listings update dynamically based on whether you are at home or traveling.",
+      "Gymatch automatically syncs to your coordinates. Local facility listings update dynamically, whether you are at home or traveling.",
     screen: "/assets/app/others/HOME.png",
   },
   {
     id: 2,
     icon: Users,
-    title: "2. DISCOVER GYMS & ACTIVE SPOTTERS",
-    subtitle: "Explore Gym Details & Active Feed",
+    title: "2. Discover Facilities & Live Presence",
+    subtitle: "Explore amenity data and real-time floor activity.",
     description:
-      "Browse gym photos, amenities, hours, and live partner feeds. See how many people are currently looking for a training partner at that specific gym.",
+      "Browse facility specifications, operational hours, and live training density. See exactly who is currently seeking a partner at your chosen location.",
     screen: "/assets/app/guest/Gym Detail as guest.png",
   },
   {
     id: 3,
     icon: Send,
-    title: "3. SEND INSTANT 'INVITE TO TRAIN'",
-    subtitle: "Select Compatible Workout Partners",
+    title: "3. Initiate Training Requests",
+    subtitle: "Select compatible workout counterparts.",
     description:
-      "Review profiles based on workout goals, experience level, and favorite routines. Send an 'Invite to Train' request with a single tap.",
+      "Review profiles based on training modality, intensity, and performance goals. Send an 'Invite to Train' request with a single tap.",
     screen: "/assets/app/guest/Guest Profile.png",
   },
   {
     id: 4,
     icon: MessageSquare,
-    title: "4. TEMPORARY CHAT & CRUSH WORKOUT",
-    subtitle: "Coordinate & Hit The Gym Together",
+    title: "4. Secure Coordination & Execute",
+    subtitle: "Connect and synchronize your session.",
     description:
-      "Once accepted, a lightweight auto-expiring chat thread opens for training coordination. Meet up, spot each other, and achieve your fitness goals!",
+      "Once accepted, an ephemeral, encrypted chat thread opens for session coordination. Meet up, secure your lifts, and hit your targets.",
     screen: "/assets/app/chats/Active Chat UI.png",
   },
 ];
@@ -67,17 +67,17 @@ export default function HowItWorksSection() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-bold uppercase tracking-widest text-[var(--color-accent)]">
             <Navigation className="w-4 h-4" />
-            <span>Simple 4-Step Process</span>
+            <span>The 4-Step Protocol</span>
           </div>
 
           <h2 className="font-bebas text-4xl sm:text-6xl text-[var(--color-foreground)] tracking-wide">
-            HOW TO USE{" "}
-            <span className="text-[var(--color-accent)]">GYMATCH</span>
+            THE GYMATCH{" "}
+            <span className="text-[var(--color-accent)]">INTEGRATION</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            Getting started takes under 30 seconds. Follow these 4 easy steps to
-            find your next gym and workout partner.
+            Getting started takes under 30 seconds. Follow these four steps to
+            synchronize with your next facility and training partner.
           </p>
         </div>
 

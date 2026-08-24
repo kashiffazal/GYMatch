@@ -146,7 +146,7 @@ export default function WhatIsItSection() {
               </h3>
 
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                Enable "Find Workout Partner" mode at any gym to see who is
+                Enable &ldquo;Find Workout Partner&rdquo; mode at any gym to see who is
                 currently training at that location, compare workout goals or
                 experience levels, and send instant training invitations.
               </p>

@@ -61,7 +61,7 @@ export default function AboutVisionSection() {
           </h2>
 
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            We'll connect you to a gym, dojo, studio, or workout partner
+            We&apos;ll connect you to a gym, dojo, studio, or workout partner
             wherever you are-whether visiting across town or across the globe.
             Let GYMatch be your ultimate fitness connector.
           </p>
