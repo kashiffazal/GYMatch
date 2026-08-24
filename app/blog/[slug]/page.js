@@ -145,7 +145,7 @@ export default async function SingleBlogPage({ params }) {
                   <h4 className="font-bebas text-2xl text-[var(--color-foreground)]">{post.author.name}</h4>
                   <p className="text-xs font-medium text-[var(--color-accent)]">{post.author.role}</p>
                   <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
-                    Dedicated to providing gym-goers and fitness enthusiasts with real-time location insights, safety protocols, and workout partner guides.
+                    We are dedicated to building the infrastructure that helps dedicated practitioners locate elite facilities, prioritize their safety, and master their training environment.
                   </p>
                 </div>
               </div>

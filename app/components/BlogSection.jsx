@@ -4,47 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Newspaper, Calendar, Clock, ArrowRight } from "lucide-react";
+import { getFeaturedOrRecentBlogs } from "@/lib/blogs";
 import styles from "./BlogSection.module.css";
 
-const BLOG_POSTS = [
-  {
-    id: 1,
-    slug: "why-is-gymatch-a-unique-workout-app",
-    title: "HOW TO FIND THE PERFECT GYM SPOTTER FOR HEAVY BENCH & SQUATS",
-    category: "Spotter Tips",
-    date: "August 4, 2026",
-    readTime: "4 min read",
-    image:
-      "/assets/img/close-up-of-muscular-young-man-lifting-weights-in-NATDE2X-1.jpg",
-    snippet:
-      "Lifting heavy weights alone limits your personal records. Discover how GYMatch connects you with verified spotters currently training at your gym.",
-  },
-  {
-    id: 2,
-    slug: "why-gymatch-is-a-social-network-fitness-app",
-    title: "THE ULTIMATE GYM DISCOVERY GUIDE FOR COMBAT & MMA TRAINEES",
-    category: "MMA Training",
-    date: "July 28, 2026",
-    readTime: "5 min read",
-    image: "/assets/img/two-women-boxing-in-the-ring-box-training.jpg",
-    snippet:
-      "Finding combat academies, boxing rings, and sparring partners in your exact weight class is now effortless with location-based matching.",
-  },
-  {
-    id: 3,
-    slug: "benefits-of-using-gymatch-mobile-app",
-    title: "HOW FITNESS NOMADS TRAIN WORLDWIDE WITHOUT SUBSCRIPTION BARRIERS",
-    category: "Travel Fitness",
-    date: "July 20, 2026",
-    readTime: "3 min read",
-    image:
-      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.jpg",
-    snippet:
-      "Whether traveling through London, Miami, or Tokyo-use real-time GPS location detection to find open gyms and local workout partners instantly.",
-  },
-];
-
 export default function BlogSection() {
+  const blogs = getFeaturedOrRecentBlogs(3);
+
   return (
     <section
       id="blog"
@@ -76,9 +41,9 @@ export default function BlogSection() {
           </Link>
         </div>
 
-        {/* Blog Cards Grid with 100% card clickability */}
+        {/* Blog Cards Grid dynamically loaded from lib/blogs.js */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {BLOG_POSTS.map((post, index) => (
+          {blogs.map((post, index) => (
             <Link
               key={post.id}
               href={`/blog/${post.slug}`}
@@ -94,7 +59,7 @@ export default function BlogSection() {
                 {/* Card Image */}
                 <div className={styles.imageWrapper}>
                   <Image
-                    src={post.image}
+                    src={post.coverImage}
                     alt={post.title}
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
@@ -118,12 +83,12 @@ export default function BlogSection() {
                       </span>
                     </div>
 
-                    <h3 className="font-bebas text-2xl text-[var(--color-foreground)] tracking-wide leading-tight group-hover:text-[var(--color-accent)] transition-colors">
+                    <h3 className="font-bebas text-2xl text-[var(--color-foreground)] tracking-wide leading-tight group-hover:text-[var(--color-accent)] transition-colors line-clamp-2">
                       {post.title}
                     </h3>
 
-                    <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
-                      {post.snippet}
+                    <p className="text-xs text-[var(--color-text-muted)] leading-relaxed line-clamp-3">
+                      {post.excerpt}
                     </p>
                   </div>
 
