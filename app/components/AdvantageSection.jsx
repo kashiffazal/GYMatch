@@ -123,7 +123,7 @@ export default function AdvantageSection() {
           {/* Centered Phone Mockup with Radiating Ring Aura */}
           <div className="lg:col-span-4 relative flex justify-center py-6">
             <PhoneMockup
-              src="/assets/app/others/HOME.png"
+              src="/assets/app/others/HOME.webp"
               alt="GYMatch Advantage Phone Mockup"
               priority={true}
             />

@@ -15,7 +15,7 @@ export default function AboutHeroSection() {
         </>
       }
       description="GYMatch is your Global Connection to the World of Fitness. We bridge millions of people to the international fitness community, inviting members to benefit by partnering with like-minded fitness goers worldwide."
-      bgImage="/assets/img/discover-your-own-strengths.jpg"
+      bgImage="/assets/img/discover-your-own-strengths.webp"
       showStoreButtons={true}
     />
   );

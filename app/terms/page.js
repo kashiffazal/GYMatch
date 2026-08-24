@@ -25,7 +25,7 @@ export default function TermsPage() {
           </>
         }
         description="This document constitutes a legally binding agreement governing your access to and use of the GYMatch ecosystem, including our website, mobile applications, and partner synchronization services."
-        bgImage="/assets/img/strong-male-athlete-running-on-modern-treadmill.jpg"
+        bgImage="/assets/img/strong-male-athlete-running-on-modern-treadmill.webp"
         showStoreButtons={false}
       />
 

@@ -9,7 +9,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   const { theme } = useTheme();
-  const logoSrc = theme === "dark" ? "/logo.png" : "/logo-black.png";
+  const logoSrc = theme === "dark" ? "/logo.webp" : "/logo-black.webp";
 
   return (
     <footer className="relative bg-[var(--color-surface)]/90 backdrop-blur-xl border-t border-[var(--color-border)] pt-16 pb-8 overflow-hidden">

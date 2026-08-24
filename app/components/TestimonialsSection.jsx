@@ -9,7 +9,7 @@ const TESTIMONIALS = [
     id: 1,
     name: "Mike P.",
     location: "Fort Lauderdale, FL",
-    image: "/assets/testimonials/1.png",
+    image: "/assets/testimonials/1.webp",
     rating: 5,
     quote:
       "I'm glad there is an app out there that can help big guys like me find a spotter in the gym. No more weight lifting alone-now I can find spotters all day long. Great stuff GYMatch!",
@@ -19,7 +19,7 @@ const TESTIMONIALS = [
     id: 2,
     name: "Louisa",
     location: "Miami, FL",
-    image: "/assets/testimonials/2.jpg",
+    image: "/assets/testimonials/2.webp",
     rating: 5,
     quote:
       "I was trying to figure out how to find new clients and meet new people... then BAM! This app is like a God-send! As a fitness instructor, GYMatch answered my prayers. ¡Estoy enamorado de este APP!",
@@ -29,7 +29,7 @@ const TESTIMONIALS = [
     id: 3,
     name: "Erica Stone",
     location: "Houston, TX",
-    image: "/assets/testimonials/3.jpg",
+    image: "/assets/testimonials/3.webp",
     rating: 5,
     quote:
       "I thought I had seen it all until I was introduced to GYMatch. This app is amazing! I've been on it everyday setting up my profile and inviting friends. Great job #Team GYMatch!",
@@ -39,7 +39,7 @@ const TESTIMONIALS = [
     id: 4,
     name: "Karan",
     location: "Miami, FL",
-    image: "/assets/testimonials/4.jpg",
+    image: "/assets/testimonials/4.webp",
     rating: 5,
     quote:
       "WOW, what can I say?! This App is so super cool! I'm definitely telling all of my friends. Where else can you find an app that connects you to so many fitness experiences? GYMatch Rocks!",
@@ -49,7 +49,7 @@ const TESTIMONIALS = [
     id: 5,
     name: "Mark D.",
     location: "Los Angeles, CA",
-    image: "/assets/testimonials/5.png",
+    image: "/assets/testimonials/5.webp",
     rating: 5,
     quote:
       "What a great APP! I can now find new clients and workout partners for myself all from the touch of a button. I'm loving it!",

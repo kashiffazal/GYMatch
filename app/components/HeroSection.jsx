@@ -87,7 +87,7 @@ export default function HeroSection() {
       {/* Background High-Res Athletic Photo with Mask Overlay */}
       <div className="absolute inset-0 z-0 opacity-15 dark:opacity-20 pointer-events-none">
         <Image
-          src="/assets/img/taking-his-training-to-the-next-level.jpg"
+          src="/assets/img/taking-his-training-to-the-next-level.webp"
           alt="Fitness Training Background"
           fill
           className="object-cover object-center"
@@ -239,7 +239,7 @@ export default function HeroSection() {
           >
             <div className="relative w-full max-w-[340px]">
               <PhoneMockup
-                src="/assets/app/others/HOME.png"
+                src="/assets/app/others/HOME.webp"
                 alt="GYMatch Main Home Feed App Screen"
                 priority={true}
               />

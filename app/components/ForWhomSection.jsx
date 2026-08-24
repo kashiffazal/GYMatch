@@ -19,7 +19,7 @@ const PERSONAS = [
     tagline: "Execute peak performance without the risk.",
     icon: Dumbbell,
     image:
-      "/assets/img/muscular-bodybuilder-training-arms-with-barbell-RSUQXF5.jpg",
+      "/assets/img/muscular-bodybuilder-training-arms-with-barbell-RSUQXF5.webp",
     badge: "Live Partner Synchronization",
     bullets: [
       "Locate reliable, experienced spotters at your exact facility.",
@@ -32,7 +32,7 @@ const PERSONAS = [
     title: "Boxing, MMA & BJJ Practitioners",
     tagline: "Match with partners in your weight class.",
     icon: Shield,
-    image: "/assets/img/two-women-boxing-in-the-ring-box-training.jpg",
+    image: "/assets/img/two-women-boxing-in-the-ring-box-training.webp",
     badge: "Technical Training Network",
     bullets: [
       "Discover boxing rings, MMA cages, and specialized studios nearby.",
@@ -46,7 +46,7 @@ const PERSONAS = [
     tagline: "Scale your local practice effortlessly.",
     icon: UserCheck,
     image:
-      "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.jpg",
+      "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.webp",
     badge: "Professional Trainer Showcase",
     bullets: [
       "Promote your profile directly within the GYMatch ecosystem.",
@@ -60,7 +60,7 @@ const PERSONAS = [
     tagline: "Train seamlessly anywhere in the world.",
     icon: Globe,
     image:
-      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.jpg",
+      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.webp",
     badge: "Global Proximity Engine",
     bullets: [
       "Automatic live location discovery from Tokyo to London to Miami to LA and beyond.",

@@ -59,7 +59,7 @@ export default function VideoSection() {
 
             {/* GPS Interactive Map App Screen Background */}
             <Image
-              src="/assets/app/others/Explore.png"
+              src="/assets/app/others/Explore.webp"
               alt="GYMatch Real-Time GPS Map Discovery Preview"
               fill
               className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-70"

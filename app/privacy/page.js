@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           </>
         }
         description="Your privacy is a foundational component of the GYMatch infrastructure. This policy outlines our protocols for data security, location management, and the protection of your personal profile."
-        bgImage="/assets/img/strong-athlete-with-dumbbells-training-in-gym.jpg"
+        bgImage="/assets/img/strong-athlete-with-dumbbells-training-in-gym.webp"
         showStoreButtons={false}
       />
 

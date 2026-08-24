@@ -50,7 +50,7 @@ export default function PageCta({
     </>
   ),
   description = "Connect with 30,000+ spotters and explore 50,000+ fitness hubs across the globe. Download GYMatch today to synchronize your training environment worldwide.",
-  bgImage = "/assets/img/bodybuilder-training-back-on-exercise-machine.jpg",
+  bgImage = "/assets/img/bodybuilder-training-back-on-exercise-machine.webp",
   metricPills = DEFAULT_METRICS,
   showStoreButtons = true,
 }) {

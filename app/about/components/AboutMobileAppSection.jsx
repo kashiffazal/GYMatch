@@ -9,7 +9,6 @@ export default function AboutMobileAppSection() {
     <section className="py-20 sm:py-28 relative bg-[var(--color-section-bg)] border-b border-[var(--color-border)] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
           {/* Left Text */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -29,7 +28,11 @@ export default function AboutMobileAppSection() {
             </h2>
 
             <p className="text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
-              Available for both iOS and Android devices, GYMatch offers one amazing answer for all your fitness needs. Merely enter your pin-based latitude & longitude coordinates, and the nearest gym locations, active spotters, and coaches appear instantly on your screen.
+              Available for both iOS and Android devices, GYMatch offers one
+              amazing answer for all your fitness needs. Merely enter your
+              pin-based latitude & longitude coordinates, and the nearest gym
+              locations, active spotters, and coaches appear instantly on your
+              screen.
             </p>
 
             <div className="space-y-3 pt-2">
@@ -39,11 +42,15 @@ export default function AboutMobileAppSection() {
               </div>
               <div className="flex items-center gap-3 text-xs sm:text-sm font-semibold text-[var(--color-foreground)]">
                 <CheckCircle2 className="w-5 h-5 text-[var(--color-accent)] shrink-0" />
-                <span>Filter by CrossFit, MMA dojos, Yoga, and Heavy Lifting</span>
+                <span>
+                  Filter by CrossFit, MMA dojos, Yoga, and Heavy Lifting
+                </span>
               </div>
               <div className="flex items-center gap-3 text-xs sm:text-sm font-semibold text-[var(--color-foreground)]">
                 <CheckCircle2 className="w-5 h-5 text-[var(--color-accent)] shrink-0" />
-                <span>Connect seamlessly across town or traveling worldwide</span>
+                <span>
+                  Connect seamlessly across town or traveling worldwide
+                </span>
               </div>
             </div>
           </motion.div>
@@ -58,13 +65,12 @@ export default function AboutMobileAppSection() {
           >
             <div className="w-full max-w-[320px]">
               <PhoneMockup
-                src="/assets/app/others/Explore.png"
+                src="/assets/app/others/Explore.webp"
                 alt="GYMatch GPS Discovery App Screen"
                 priority={true}
               />
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>

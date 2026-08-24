@@ -12,14 +12,14 @@ export default function Loading() {
         <div className="relative w-24 h-24 flex items-center justify-center">
           {/* Outer Ripple Wave */}
           <div className="absolute inset-0 rounded-full border border-[var(--color-accent)]/30 animate-ping opacity-75"></div>
-          
+
           {/* Inner Glowing Spinner Ring */}
           <div className="absolute inset-0 rounded-full border-2 border-[var(--color-border)] border-t-[var(--color-accent)] border-r-[var(--color-accent)] animate-spin"></div>
-          
+
           {/* Central Logo Container */}
           <div className="relative w-12 h-12 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] flex items-center justify-center shadow-xl shadow-[var(--color-accent)]/10">
             <Image
-              src="/fav.png"
+              src="/fav.webp"
               alt="GYMatch Loading"
               width={32}
               height={32}
@@ -34,7 +34,7 @@ export default function Loading() {
           <h2 className="font-bebas text-3xl sm:text-4xl tracking-widest text-[var(--color-foreground)] leading-none">
             GYMATCH <span className="text-[var(--color-accent)]">LOADING</span>
           </h2>
-          
+
           <div className="flex items-center justify-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[var(--color-text-muted)]">
             <span>Connecting Fitness Hubs</span>
             <span className="inline-flex gap-1 items-center">

@@ -26,7 +26,7 @@ const FEATURES = [
 
     description:
       "Syncs instantly to your location upon launch. Access nearby facilities and training hubs sorted by proximity and rating-no manual input required.",
-    screen: "/assets/app/others/HOME.png",
+    screen: "/assets/app/others/HOME.webp",
   },
   {
     id: "partner-feed",
@@ -35,7 +35,7 @@ const FEATURES = [
     subtitle: "Find Training Partners",
     description:
       "View members currently active at your facility. Review workout preferences and experience levels to send instant 'Invite to Train' requests.",
-    screen: "/assets/app/guest/Guest Profile.png",
+    screen: "/assets/app/guest/Guest Profile.webp",
   },
   {
     id: "interactive-map",
@@ -44,7 +44,7 @@ const FEATURES = [
     subtitle: "Visual Hub Explorer",
     description:
       "A visual, real-time map displaying training hubs around you. Tap markers to preview facility cards, navigation routes, and current member density.",
-    screen: "/assets/app/others/Explore.png",
+    screen: "/assets/app/others/Explore.webp",
   },
   {
     id: "gym-details",
@@ -53,7 +53,7 @@ const FEATURES = [
     subtitle: "Specs, Amenities & Hours",
     description:
       "Deep-dive into facility photo galleries, operational hours, verified amenity lists, and member ratings to find your ideal training environment.",
-    screen: "/assets/app/guest/Gym Detail as guest.png",
+    screen: "/assets/app/guest/Gym Detail as guest.webp",
   },
   {
     id: "temporary-chat",
@@ -62,7 +62,7 @@ const FEATURES = [
     subtitle: "Ephemeral & Encrypted",
     description:
       "Coordinate sessions without exposing personal contact details. Conversations are encrypted and auto-expire upon workout completion for maximum privacy.",
-    screen: "/assets/app/chats/Active Chat UI.png",
+    screen: "/assets/app/chats/Active Chat UI.webp",
   },
   {
     id: "favorites",
@@ -71,7 +71,7 @@ const FEATURES = [
     subtitle: "Rapid Access & Updates",
     description:
       "Save your preferred training locations to your profile for rapid navigation, instant partner updates, and streamlined access.",
-    screen: "/assets/app/others/Fav Screen.png",
+    screen: "/assets/app/others/Fav Screen.webp",
   },
 ];
 

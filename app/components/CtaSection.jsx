@@ -102,7 +102,7 @@ export default function CtaSection() {
               {/* Back Phone (slightly offset) */}
               <div className="w-[45%] opacity-85 z-10 transform translate-y-6 -mr-8 hover:translate-y-2 transition-transform duration-500">
                 <CtaPhone
-                  src="/assets/app/others/Explore.png"
+                  src="/assets/app/others/Explore.webp"
                   alt="Explore Map App Screen"
                 />
               </div>
@@ -110,7 +110,7 @@ export default function CtaSection() {
               {/* Front Hero Phone */}
               <div className="w-[52%] z-30 transform -translate-y-1 hover:-translate-y-4 transition-transform duration-500">
                 <CtaPhone
-                  src="/assets/app/others/HOME.png"
+                  src="/assets/app/others/HOME.webp"
                   alt="GYMatch Home App Screen"
                   priority
                 />

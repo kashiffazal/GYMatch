@@ -60,7 +60,7 @@ export default function WhatIsItSection() {
             {/* Background Fitness Photo Overlay */}
             <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-30 transition-opacity duration-700">
               <Image
-                src="/assets/img/close-up-of-muscular-young-man-lifting-weights-in-NATDE2X-1.jpg"
+                src="/assets/img/close-up-of-muscular-young-man-lifting-weights-in-NATDE2X-1.webp"
                 alt="Gym Weight Lifting"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -123,7 +123,7 @@ export default function WhatIsItSection() {
             {/* Background Fitness Photo Overlay */}
             <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-30 transition-opacity duration-700">
               <Image
-                src="/assets/img/healthy-young-athletes-friends-doing-exercises-at-B32VH56.jpg"
+                src="/assets/img/healthy-young-athletes-friends-doing-exercises-at-B32VH56.webp"
                 alt="Gym Training Partners"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -146,9 +146,10 @@ export default function WhatIsItSection() {
               </h3>
 
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                Enable &ldquo;Find Workout Partner&rdquo; mode at any gym to see who is
-                currently training at that location, compare workout goals or
-                experience levels, and send instant training invitations.
+                Enable &ldquo;Find Workout Partner&rdquo; mode at any gym to see
+                who is currently training at that location, compare workout
+                goals or experience levels, and send instant training
+                invitations.
               </p>
 
               <ul className="space-y-3 text-xs font-semibold text-[var(--color-foreground)] pt-2">

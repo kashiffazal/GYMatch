@@ -29,7 +29,7 @@ export default function Header() {
   }, []);
 
   // Determine current logo path based on active theme
-  const logoSrc = theme === "dark" ? "/logo.png" : "/logo-black.png";
+  const logoSrc = theme === "dark" ? "/logo.webp" : "/logo-black.webp";
 
   return (
     <header

@@ -5,7 +5,8 @@ import { BookOpen } from "lucide-react";
 
 export const metadata = {
   title: "Blog & News | GYMatch SaaS App",
-  description: "Discover the latest fitness guides, workout partner advice, mobile app updates, and community spotter stories.",
+  description:
+    "Discover the latest fitness guides, workout partner advice, mobile app updates, and community spotter stories.",
 };
 
 export default function BlogListingPage() {
@@ -22,7 +23,7 @@ export default function BlogListingPage() {
           </>
         }
         description="Discover the latest fitness guides, workout partner advice, mobile app updates, and community spotlights."
-        bgImage="/assets/img/fitness-sport-training-gym-success-and-lifestyle-JKSDH2B.jpg"
+        bgImage="/assets/img/fitness-sport-training-gym-success-and-lifestyle-JKSDH2B.webp"
         showStoreButtons={false}
       />
 

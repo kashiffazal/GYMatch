@@ -5,7 +5,8 @@ import { MessageSquare } from "lucide-react";
 
 export const metadata = {
   title: "Contact Us | GYMatch SaaS App",
-  description: "Get in touch with the GYMatch team for support, partnership inquiries, or general questions about our fitness matching app.",
+  description:
+    "Get in touch with the GYMatch team for support, partnership inquiries, or general questions about our fitness matching app.",
 };
 
 export default function ContactPage() {
@@ -22,7 +23,7 @@ export default function ContactPage() {
           </>
         }
         description="Have a question, feedback, or business inquiry? We'd love to hear from you. Send us a message and our support team will respond promptly."
-        bgImage="/assets/img/healthy-young-athletes-friends-doing-exercises-at-B32VH56.jpg"
+        bgImage="/assets/img/healthy-young-athletes-friends-doing-exercises-at-B32VH56.webp"
         showStoreButtons={false}
       />
 

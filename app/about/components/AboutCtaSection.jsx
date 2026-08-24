@@ -21,7 +21,7 @@ export default function AboutCtaSection() {
         </>
       }
       description="Connect with 30,000+ spotters and explore 50K+ fitness hubs across the globe. Download GYMatch today and start discovering gyms and training partners worldwide."
-      bgImage="/assets/img/beautiful-fit-people-working-out-in-gym-together-6FHVDS2-1.jpg"
+      bgImage="/assets/img/beautiful-fit-people-working-out-in-gym-together-6FHVDS2-1.webp"
       metricPills={ABOUT_METRICS}
       showStoreButtons={true}
     />

@@ -32,9 +32,9 @@ export const metadata = {
     "fighting training partners",
   ],
   icons: {
-    icon: "/fav.png",
-    shortcut: "/fav.png",
-    apple: "/fav.png",
+    icon: "/fav.webp",
+    shortcut: "/fav.webp",
+    apple: "/fav.webp",
   },
 };
 

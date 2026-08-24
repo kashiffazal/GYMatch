@@ -19,7 +19,7 @@ const STEPS = [
     subtitle: "Open the app and enable location services.",
     description:
       "GYMatch automatically syncs to your coordinates. Local facility listings update dynamically, whether you are at home or traveling.",
-    screen: "/assets/app/others/HOME.png",
+    screen: "/assets/app/others/HOME.webp",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const STEPS = [
     subtitle: "Explore amenity data and real-time floor activity.",
     description:
       "Browse facility specifications, operational hours, and live training density. See exactly who is currently seeking a partner at your chosen location.",
-    screen: "/assets/app/guest/Gym Detail as guest.png",
+    screen: "/assets/app/guest/Gym Detail as guest.webp",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const STEPS = [
     subtitle: "Select compatible workout counterparts.",
     description:
       "Review profiles based on training modality, intensity, and performance goals. Send an 'Invite to Train' request with a single tap.",
-    screen: "/assets/app/guest/Guest Profile.png",
+    screen: "/assets/app/guest/Guest Profile.webp",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const STEPS = [
     subtitle: "Connect and synchronize your session.",
     description:
       "Once accepted, an ephemeral, encrypted chat thread opens for session coordination. Meet up, secure your lifts, and hit your targets.",
-    screen: "/assets/app/chats/Active Chat UI.png",
+    screen: "/assets/app/chats/Active Chat UI.webp",
   },
 ];
 

@@ -19,7 +19,7 @@ export default function AboutStorySection() {
           >
             <div className="relative w-full h-full min-h-[380px] sm:min-h-[460px] rounded-3xl overflow-hidden border-2 border-[var(--color-accent)] shadow-2xl shadow-[var(--color-accent)]/10 flex flex-col justify-end">
               <Image
-                src="/assets/img/client-image-3.jpeg"
+                src="/assets/img/client-image-3.webp"
                 alt="Entrepreneur Otis Jones - Founder & GYMatch Visionary"
                 fill
                 className="object-cover object-center"

@@ -18,7 +18,7 @@ const WHY_POINTS = [
     description:
       "Mitigate risk during high-intensity sessions. Connect with verified spotters currently training on the floor.",
     bgImage:
-      "/assets/img/muscular-bodybuilder-training-arms-with-barbell-RSUQXF5.jpg",
+      "/assets/img/muscular-bodybuilder-training-arms-with-barbell-RSUQXF5.webp",
   },
   {
     icon: Globe,
@@ -26,21 +26,22 @@ const WHY_POINTS = [
     description:
       "Whether in London or Tokyo, our proximity engine maps regional studios and training hubs to your immediate location.",
     bgImage:
-      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.jpg",
+      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.webp",
   },
   {
     icon: Target,
     title: "Precision Alignment",
     description:
       "Sync with partners who match your exact intensity-from combat conditioning and hypertrophy to mobility training.",
-    bgImage: "/assets/img/two-women-boxing-in-the-ring-box-training.jpg",
+    bgImage: "/assets/img/two-women-boxing-in-the-ring-box-training.webp",
   },
   {
     icon: Lock,
     title: "Encrypted Interaction",
     description:
       "Your privacy is absolute. Appear only within public training zones via ephemeral, secure messaging channels.",
-    bgImage: "/assets/img/cross-training-young-woman-exercising-at-the-gym.jpg",
+    bgImage:
+      "/assets/img/cross-training-young-woman-exercising-at-the-gym.webp",
   },
   {
     icon: HeartHandshake,
@@ -48,7 +49,7 @@ const WHY_POINTS = [
     description:
       "Engage with local coaches and training circles. Transform isolated routines into collaborative, high-performance efforts.",
     bgImage:
-      "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.jpg",
+      "/assets/img/trainer-giving-advice-to-woman-at-crossfit-gym-P3JM27Z.webp",
   },
   {
     icon: Shield,
@@ -56,7 +57,7 @@ const WHY_POINTS = [
     description:
       "Maintain a professional environment with robust moderation, blocking, and reporting protocols to ensure a secure experience.",
     bgImage:
-      "/assets/img/fitness-sport-training-gym-success-and-lifestyle-JKSDH2B.jpg",
+      "/assets/img/fitness-sport-training-gym-success-and-lifestyle-JKSDH2B.webp",
   },
 ];
 
