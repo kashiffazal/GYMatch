@@ -60,7 +60,7 @@ export default function WhatIsItSection() {
             {/* Background Fitness Photo Overlay */}
             <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-30 transition-opacity duration-700">
               <Image
-                src="/assets/img/close-up-of-muscular-young-man-lifting-weights-in-NATDE2X-1.webp"
+                src="/assets/img/home-real-time-geolocation-1.webp"
                 alt="Gym Weight Lifting"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -123,7 +123,7 @@ export default function WhatIsItSection() {
             {/* Background Fitness Photo Overlay */}
             <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-30 transition-opacity duration-700">
               <Image
-                src="/assets/img/healthy-young-athletes-friends-doing-exercises-at-B32VH56.webp"
+                src="/assets/img/home-active-workout-2.webp"
                 alt="Gym Training Partners"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"

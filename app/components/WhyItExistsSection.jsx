@@ -26,7 +26,7 @@ const WHY_POINTS = [
     description:
       "Whether in London or Tokyo, our proximity engine maps regional studios and training hubs to your immediate location.",
     bgImage:
-      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.webp",
+      "/assets/img/home-global-facility.webp",
   },
   {
     icon: Target,
@@ -41,7 +41,7 @@ const WHY_POINTS = [
     description:
       "Your privacy is absolute. Appear only within public training zones via ephemeral, secure messaging channels.",
     bgImage:
-      "/assets/img/cross-training-young-woman-exercising-at-the-gym.webp",
+      "/assets/img/home-encrypted-interaction.webp",
   },
   {
     icon: HeartHandshake,

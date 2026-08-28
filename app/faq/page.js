@@ -23,7 +23,7 @@ export default function FaqPage() {
           </>
         }
         description="Get the insights you need on GYMatch infrastructure, partner synchronization, facility discovery, and professional spotlight features."
-        bgImage="/assets/img/group-of-people-training-in-gym-6FYJXB3.webp"
+        bgImage="/assets/img/page-title-faq.webp"
         showStoreButtons={false}
       />
 

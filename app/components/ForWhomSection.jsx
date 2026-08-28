@@ -60,7 +60,7 @@ const PERSONAS = [
     tagline: "Train seamlessly anywhere in the world.",
     icon: Globe,
     image:
-      "/assets/img/fit-group-of-people-exercising-on-a-treadmill-in-gym-1.webp",
+      "/assets/img/home-travel-and-fitness.webp",
     badge: "Global Proximity Engine",
     bullets: [
       "Automatic live location discovery from Tokyo to London to Miami to LA and beyond.",
